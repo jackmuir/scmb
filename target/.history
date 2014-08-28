@@ -1,0 +1,14 @@
+update
+console
+update
+set libraryDependencies += "org.scalanlp" % "breeze_2.10" % "0.9"
+set resolvers += "Sonatype Releases" at "https://oss.sonatype.org/content/repositories/releases/"
+console
+update
+console
+clean
+reload
+clean
+reload
+update
+console
