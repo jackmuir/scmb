@@ -12,3 +12,5 @@ clean
 reload
 update
 console
+cd
+console
