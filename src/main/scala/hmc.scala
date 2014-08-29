@@ -34,7 +34,7 @@ class HMC {
         leapFrog(qn, pn, l - 1, ep)
       }
     }
-    
+
     val (qn, pn) = leapFrog(qo, po - (calcUgrad(qo) :* uep) / 2.0, l, uep)
     val hn = calcU(qn) + (pn dot pn)
     if (metCheck(ho,hn)) (qn, acc + 1) else (qo, acc)
