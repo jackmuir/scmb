@@ -6,7 +6,7 @@ import breeze.constants.Pi
 
 import math.pow, abs, sqrt, Pi
 
-class SHDataObject(maxl: Int) {
+class SHDataObject(maxl: Int, datam: Map[String,String]) {
 
   val ml = maxl
 
@@ -22,33 +22,7 @@ class SHDataObject(maxl: Int) {
       }
     }
 
-    //this is a very un-scala function....
-    def modpLgndr1(l: Int, m: Int, x: Double): Double = {
-      assert(0 <= m && m <= l && abs(x) <= 1.0)
-      val dl = l.toDouble
-      val dm = m.toDouble
-      val norm = sqrt(2.0 * dl + 1.0) / sqrt(4.0 * Pi)
-      var pmm = norm
-      if (m != 0) pmm = (pow(-1, m)).toDouble * pmm * xfact(2 * m) * pow((1.0-x * x), (dm / 2.0))
-      if (l == m) pmm
-      else {
-        var pmmp1 = x * pmm * sqrt(2.0 * m + 1.0)
-        if (l == m + 1) pmmp1
-        else {
-          var pll = 0.0
-          var dll = 0.0
-          for (ll <- m + 2 to l) {
-            dll = ll.toDouble
-            pll = (x * (2.0 * dll - 1.0) * pmmp1 - sqrt(pow((dll - 1.0), 2.0) - dm * dm) * pmm) / sqrt(pow(dll, 2.0) - pow(dm, 2.0))
-            pmm = pmmp1
-            pmmp1 = pll
-          }
-          pll
-        }
-      }
-    }
-
-    def modpLgndr2(l: Int, m: Int, x: Double): Double = {
+    def modpLgndr(l: Int, m: Int, x: Double): Double = {
       assert(0 <= m && m <= l && abs(x) <= 1.0)
       val dl = l.toDouble
       val dm = m.toDouble
@@ -62,10 +36,10 @@ class SHDataObject(maxl: Int) {
           def mplacc(ll: Int, acc1: Double, acc2: Double): Double = {
             val dll = ll.toDouble
             val pll = (x * (2.0 * dll - 1.0) * acc2 - sqrt(pow((dll - 1.0), 2.0) - dm * dm) * acc1) / sqrt(pow(dll, 2.0) - pow(dm, 2.0))
-            if (ll == m + 2) pll
-            else mplacc(ll - 1, acc2, pll)
+            if (ll == l) pll
+            else mplacc(ll + 1, acc2, pll)
           }
-          mplacc(l, pmm, pmmp1)
+          mplacc(m + 2, pmm, pmmp1)
         }
       }
     }
@@ -90,12 +64,12 @@ class SHDataObject(maxl: Int) {
     mis dot mis
   }
 
-  def pcalcU(g: DenseMatrix[Double], q: DenseVector[Double], m: DenseVector[Double], sig: Double): Double = {
+  def pCalcU(g: DenseMatrix[Double], q: DenseVector[Double], m: DenseVector[Double], sig: Double): Double = {
     val phi = sqMisfit(g,q,m)
     phi / (2.0 * sig)
   }
 
-  def pcalcUgrad(g: DenseMatrix[Double], q: DenseVector[Double], m: DenseVector[Double], sig: Double): DenseVector[Double] = {
+  def pCalcUgrad(g: DenseMatrix[Double], q: DenseVector[Double], m: DenseVector[Double], sig: Double): DenseVector[Double] = {
     val mis = misfit(g,q,m)
     g.t * mis / sig
   }
@@ -104,3 +78,5 @@ class SHDataObject(maxl: Int) {
     sqmis / (2.0 * Gamma((n.toDouble + 3) / 2.0, 1.0).sample())
     )
 }
+
+class ResTT extends SHDataObject {}
