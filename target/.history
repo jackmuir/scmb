@@ -25,3 +25,68 @@ exit
 console
 exit
 console
+exit
+console
+val a = List(("a","b","c"),(1,2,3))
+val a = List(("a","b","c"),("1","2","3"))
+console
+exit
+help
+update
+compile
+run 1 2
+run ttSHA 1 2
+compile
+run ttSHA 1 2
+run 1 2
+uberjar
+export-jars
+exit
+compile
+run 100 0.05
+run 100 0.01
+run 100 0.0001
+compile
+run 100 0.01
+run 100 0.001
+run 10 0.001
+compile
+run 10 0.001
+compile
+run 100 0.0001 10 1 
+compile
+run 100 0.0001 10 1 
+compile
+run 100 0.0001 10 1 
+quit
+:q
+exit
+compile
+run 100 0.0001 10 1 
+console
+run 100 0.0001 10 1 
+compile
+run 100 0.0001 10 1 
+compile
+run 100 0.0001 10 1 
+run 100 0.0001 1000 100 
+run 100 0.005 1000 100 
+run 100 0.001 1000 100 
+run 100 0.0001 1000 100 
+run 100 0.00001 1000 100 
+run 100 0.00001 10 1 
+run 100 0.005 10 1 
+run 100 0.0005 10 1 
+run 100 0.0001 10 1 
+run 100 0.00001 10 1 
+run 100 0.00001 1000 100 
+run 100 0.00001 100000 1000 
+console
+run 100 0.00001 100000 1000 
+console
+run 100 0.00001 100000 1000 
+run 100 0.05 100000 1000 
+run 100 0.01 100000 1000 
+console
+run 100 0.05 1000 100
+run 100 0.05 10000 100

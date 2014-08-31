@@ -68,12 +68,12 @@ abstract class SHData(maxl: Int) {
 
   def pCalcU(g: DenseMatrix[Double], q: DenseVector[Double], d: DenseVector[Double], sig: Double): Double = {
     val phi = sqMisfit(g,q,d)
-    phi / (2.0 * sig)
+    phi / (2.0 * sig * sig)
   }
 
   def pCalcUgrad(g: DenseMatrix[Double], q: DenseVector[Double], d: DenseVector[Double], sig: Double): DenseVector[Double] = {
     val mis = misfit(g,q,d)
-    g.t * mis / sig
+    (g.t * mis) / (sig * sig)
   }
 
   def stringListToDouble(strList: List[String]): List[Double] = for (str <- strList) yield str.toDouble
