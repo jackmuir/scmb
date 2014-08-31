@@ -14,3 +14,14 @@ update
 console
 cd
 console
+:q
+console
+sbt reload
+sbt help
+help
+exit
+console
+exit
+console
+exit
+console
