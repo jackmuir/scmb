@@ -90,3 +90,12 @@ run 100 0.01 100000 1000
 console
 run 100 0.05 1000 100
 run 100 0.05 10000 100
+console
+run 100 0.05 10000 100
+run 100 0.1 10000 100
+run 100 0.1 1007500 100
+run 100 0.075 10000 100
+run 100 0.075 50000 100
+run 100 0.075 50000 100 8
+val loadnode = xml.XML.loadFile("datasets.xml")
+console

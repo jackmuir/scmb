@@ -1,3 +1,26 @@
+/*
+The MIT License (MIT)
+
+Copyright (c) 2014 Jack Broderick Muir
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
 package scmb.shdatasets
 
 import breeze.linalg._
@@ -84,6 +107,11 @@ abstract class SHData(maxl: Int) {
     for(line <- oTimesFile) yield stringListToDouble(line.split(" ").toList)
   }
 
+  def checkDataContains(dataM: Map[String,String]) {
+    assert(dataM.keySet.exists(_ == "otimes"), "Data map must contain an otimes file")
+    assert(dataM.keySet.exists(_ == "raypath"), "Data map must contain a raypath file")
+    assert(dataM.keySet.exists(_ == "topoin"), "Data map must contain a topoin file")
+  }
 }
 
 class ResTT(maxl: Int, dataM: Map[String,String]) extends SHData(maxl) {
@@ -99,5 +127,16 @@ class ResTT(maxl: Int, dataM: Map[String,String]) extends SHData(maxl) {
 
   def gMatrix(mp: List[List[Double]], hl: List[List[Int]]): DenseMatrix[Double] = {
     DenseMatrix.tabulate(mp.length, hl.length){case (i, j) => llcylm(hl(j)(0), hl(j)(1), mp(i)(6), mp(i)(7))}
+  }
+}
+
+
+class PcPmP(maxl: Int, dataM: Map[String,String]) extends SHData(maxl) {
+  checkDataContains(dataM)
+  }
+}
+
+class P4KPmPcP(maxl: Int, dataM: Map[String,String]) extends SHData(maxl) {
+  checkDataContains(dataM)
   }
 }

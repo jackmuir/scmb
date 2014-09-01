@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mRunning ttSHA 100 0.05 10000 100[0m
+[0m[[0minfo[0m] [0mRunning ttSHA 100 0.075 50000 100 8[0m
 [0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
 [0m[[0mdebug[0m] [0m  Classpath:[0m
 [0m[[0mdebug[0m] [0m	/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.11/classes[0m
@@ -34,3 +34,7 @@
 [0m[[0mdebug[0m] [0m	/Users/jackmuir/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-win-x86_64/jars/netlib-native_system-win-x86_64-1.1-natives.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/jackmuir/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-win-i686/jars/netlib-native_system-win-i686-1.1-natives.jar[0m
 [0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
+[0m[[0mdebug[0m] [0m	Thread run-main-0 exited.[0m
+[0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m
+[0m[[0mdebug[0m] [0mSandboxed run complete..[0m
+[0m[[0mdebug[0m] [0mExited with code 0[0m
