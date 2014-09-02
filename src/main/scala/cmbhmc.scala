@@ -46,7 +46,7 @@ class cmbHMC(ll: Int, ee: Double, maxl: Int, dataSets: List[Map[String, String]]
 
   def calcGradU(q: Position, sigs: HierarchicalList): DenseVector[Double] = {
     val pGrads = for (cmbSet <- cmbSets) yield cmbSet.pCalcGradU(cmbSet.gMatrix, q, cmbSet.residuals, sigs(cmbSets.indexOf(cmbSet)))
-    pGrads.reduceLeft((a, b) => a + b)
+    pGrads.reduceLeft(_ + _)
   }
 
   def gibbsUpdate(q: Position): HierarchicalList = {

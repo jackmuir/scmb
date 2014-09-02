@@ -134,7 +134,9 @@ abstract class SHData(maxl: Int) {
     //otimes files have file data on the first line that we don't want; hence the drop
     val oTimesFile = fortranInConvert(filename)
     val splitOTimesFile = fileToListListDouble(oTimesFile)
-    (for (line <- splitOTimesFile) yield line(1) + line(2)).toArray
+    //(for (line <- splitOTimesFile) yield line(1) + line(2)).toArray
+    // lets try just the deviation...
+    (for (line <- splitOTimesFile) yield line(1)).toArray
   }
 
   def pathLoader(filename: String): (List[List[List[Double]]], List[Double]) = {
@@ -237,7 +239,7 @@ class P4KPmPcP(maxl: Int, dataM: Map[String,String]) extends SHData(maxl) {
       llcylm(l, m, pcptopoLat, pcptopoLon) * reflectTop(pcprayParam)
 
     }
-    DenseMatrix.tabulate(topoRefs.length, hList.length){case (i, j) => gTopoMatElement(i, j)}
+    DenseMatrix.tabulate(pairedTopoRefs.length, hList.length){case (i, j) => gTopoMatElement(i, j)}
   }
 
   val gMatrix = DenseMatrix.horzcat(gTopoMatrix, gTomoMatrix(rayPaths))

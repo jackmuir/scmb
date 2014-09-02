@@ -121,3 +121,42 @@ clean
 run 4 100 0.0001 50000 10000 100 datasets.xml
 consoleQuick
 run 4 100 0.0001 50000 10000 100 datasets.xml
+run 4 100 0.00000001 50000 10000 100 datasets.xml
+run 4 100 0.0001 50000 10000 100 datasets.xml
+run 4 100 0.00001 50000 10000 100 datasets.xml
+run 4 100 0.000001 50000 10000 100 datasets.xml
+run 4 100 0.000005 50000 10000 100 datasets.xml
+run 4 100 0.0000025 50000 10000 100 datasets.xml
+run 4 100 0.0000015 50000 10000 100 datasets.xml
+run 4 100 0.000001 50000 10000 100 datasets.xml
+run 4 100 0.0000005 50000 10000 100 datasets.xml
+run 4 100 0.0000005 500 100 10 datasets.xml
+run 4 100 0.0000001 500 100 10 datasets.xml
+run 4 100 0.0000002 500 100 10 datasets.xml
+run 4 100 0.0000005 500 100 10 datasets.xml
+run 4 100 0.0000008 500 100 10 datasets.xml
+run 4 100 0.0000006 500 100 10 datasets.xml
+run 4 100 0.0000005 500 100 10 datasets.xml
+run 4 100 0.00000055 500 100 10 datasets.xml
+run 4 100 0.000000525 500 100 10 datasets.xml
+run 4 100 0.000000525 5000 100 10 datasets.xml
+run 4 25 0.000000525 5000 100 10 datasets.xml
+run 4 25 0.00000051 5000 100 10 datasets.xml
+run 4 25 0.00000050 5000 100 10 datasets.xml
+run 4 25 0.000000501 5000 100 10 datasets.xml
+run 4 25 0.000000505 5000 100 10 datasets.xml
+run 4 25 0.000000509 5000 100 10 datasets.xml
+consoleQuick
+run 4 25 0.000000509 5000 100 10 datasets.xml
+run 4 25 0.00001 5000 100 10 datasets.xml
+run 4 25 0.001 5000 100 10 datasets.xml
+run 4 25 0.0001 5000 100 10 datasets.xml
+run 4 100 0.0005 5000 100 10 datasets.xml
+run 4 100 0.0001 5000 1000 100 datasets.xml
+run 4 100 0.0003 5000 1000 100 datasets.xml
+exit
+run 4 100 0.0003 5000 1000 100 datasets.xml
+run 4 500 0.0004 5000 1000 100 datasets.xml
+run 4 500 0.0005 5000 1000 100 datasets.xml
+run 4 1000 0.00025 5000 1000 100 datasets.xml
+run 4 1000 0.0001 5000 1000 100 datasets.xml
