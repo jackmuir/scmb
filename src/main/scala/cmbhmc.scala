@@ -23,7 +23,7 @@ SOFTWARE.
 */
 package scmb.cmbhmc
 
-import breeze.linalg._
+import breeze.linalg.DenseVector
 
 import scmb.shdatasets._
 
@@ -44,15 +44,15 @@ class cmbHMC(ll: Int, ee: Double, maxl: Int, dataSets: List[Map[String, String]]
     sum(pSums)
     }
 
-  def calcUgrad(q: DenseVector[Double], sigs: List[Double]): DenseVector[Double] = {
-    val pGrads = for (cmbSet <- cmbSets) yield cmbSet.pCalcUgrad(cmbSet.gm, q, cmbSet.residuals, sigs(cmbSets.indexOf(cmbSet)))
+  def calcGradU(q: DenseVector[Double], sigs: List[Double]): DenseVector[Double] = {
+    val pGrads = for (cmbSet <- cmbSets) yield cmbSet.pCalcGradU(cmbSet.gm, q, cmbSet.residuals, sigs(cmbSets.indexOf(cmbSet)))
     pGrads.reduceLeft((a, b) => a + b)
   }
 
   def gibbsUpdate(q: DenseVector[Double]): List[Double] = {
-    val ns = for (cmbSet <- cmbSets) yield cmbSet.residuals.length
+    val noParameters = for (cmbSet <- cmbSets) yield cmbSet.residuals.length
     val sqMisfits = for (cmbSet <- cmbSets) yield cmbSet.sqMisfit(cmbSet.gm, q, cmbSet.residuals)
-    for (sqm <- sqMisfits) yield stdDevSample(sqm, ns(sqMisfits.indexOf(sqm)))
+    for (sqm <- sqMisfits) yield stdDevSample(sqm, noParameters(sqMisfits.indexOf(sqm)))
   }
 }
 
@@ -65,8 +65,8 @@ class resSHA(ll: Int, ee: Double, maxl: Int, dataSets: List[Map[String, String]]
     sum(pSums)
     }
 
-  def calcUgrad(q: DenseVector[Double], sigs: List[Double]): DenseVector[Double] = {
-    val pGrads = for (resSet <- resSets) yield resSet.pCalcUgrad(resSet.gm, q, resSet.residuals, sigs(resSets.indexOf(resSet)))
+  def calcGradU(q: DenseVector[Double], sigs: List[Double]): DenseVector[Double] = {
+    val pGrads = for (resSet <- resSets) yield resSet.pcalcGradU(resSet.gm, q, resSet.residuals, sigs(resSets.indexOf(resSet)))
     pGrads.reduceLeft((a, b) => a + b)
   }
 

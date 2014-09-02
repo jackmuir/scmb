@@ -23,80 +23,86 @@ SOFTWARE.
 */
 package scmb.hmc
 
-import breeze.linalg._
+import breeze.linalg.DenseVector
 
-import breeze.stats.distributions.Uniform
+import breeze.stats.distributions.{Uniform, Gaussian, Gamma}
 
-import breeze.stats.distributions.Gaussian
-
-import breeze.stats.distributions.Gamma
-
-import math.log, math.sqrt
+import math.{log, sqrt}
 
 import scala.annotation.tailrec
 
-abstract class HMC(ul: Int, ue: Double) {
-  val uDev = new Uniform(0.0,1.0)
-  val nDev = new Gaussian(0.0,1.0)
-  val l = ul
-  val ep = ue
+/*
+This algorithm, with the described alterations (perturbing epsilon and L,
+performing Gibbs updates of heirarchical variables) may be found in R. Neal
+`` MCMC using Hamiltonian Dynamics'' http://arxiv.org/abs/1206.1901
+*/
 
-  final def metCheck(ho: Double, hn: Double): Boolean = log(uDev.sample()) < ho - hn
+abstract class HMC(baseSteps: Int, baseEpsilon: Double) {
+  type Position = DenseVector[Double]
+  type Momentum = DenseVector[Double]
+  type HierarchicalList = List[Double]
+  val uniformDev = new Uniform(0.0,1.0)
+  val normalDev = new Gaussian(0.0,1.0)
 
-  def calcU(q: DenseVector[Double], sigs: List[Double]): Double
+  final def metCheck(ho: Double, hn: Double): Boolean = log(uniformDev.sample()) < ho - hn
 
-  def calcUgrad(q: DenseVector[Double], sigs: List[Double]): DenseVector[Double]
+  def calcU(q: Position, heirarchicalVar: List[Double]): Double
 
-  def gibbsUpdate(q: DenseVector[Double]): List[Double]
+  def calcGradU(q: Position, hierarchicalVar: HierarchicalList): DenseVector[Double]
 
-  final def hmcUpdate(qo: DenseVector[Double], sigs: List[Double], acc: Int): (DenseVector[Double], Int) = {
-    val uep = ep * min(sigs) * min(sigs) * (0.9 + 0.2 * uDev.sample()) // perturb epsilon pm 10% to avoid cyclic orbits
-    val ul = (l.toDouble * (0.9 + 0.2 * uDev.sample())).toInt
-    val po = DenseVector(nDev.sample(qo.length).toArray)
-    val ho = calcU(qo, sigs) + (po dot po) / 2.0
+  final def totalEnergy(q: Position, p: Momentum, hierarchicalVar: HierarchicalList) = calcU(q, hierarchicalVar) + (p dot p) / 2.0
+
+  def gibbsUpdate(q: Position): HeirarchicalList
+
+  final def hmcUpdate(q: Position, hierarchicalVar: HierarchicalList): (Position, Int) = {
+    val minHeirarchical = min(hierarchicalVar)
+    val epsilon = baseEpsilon * minHeirarchical * minHeirarchical * (0.9 + 0.2 * uniformDev.sample()) // perturb epsilon pm 10% to avoid cyclic orbits
+    val steps = (baseSteps.toDouble * (0.9 + 0.2 * uDev.sample())).toInt
+    val p = DenseVector(normalDev.sample(q.length).toArray)
+    val ho = totalEnergy(q, hierarchicalVar, p)
     @tailrec
-    def leapFrog(qo: DenseVector[Double], po: DenseVector[Double], ll: Int): (DenseVector[Double], DenseVector[Double]) = {
-      if (ll == 1) {
-        val qn = qo + (po :* uep)
-        val pn = po - (calcUgrad(qn, sigs) :* uep) / 2.0
+    def leapFrog(qo: Position, po: Momentum, stepsToGo: Int): (Position, Momentum) = match stepsToGo {
+      case 1 => {
+        val qn = qo + (po :* epsilon)
+        val pn = po - (calcGradU(qn, hierarchicalVar) :* epsilon) / 2.0
         (qn, pn)
       }
-      else {
-        val qn = qo + (po :* uep)
-        val pn = po - (calcUgrad(qn, sigs) :* uep)
-        leapFrog(qn, pn, ll - 1)
+      case _ => {
+        val qn = qo + (po :* epsilon)
+        val pn = po - (calcGradU(qn, hierarchicalVar) :* epsilon)
+        leapFrog(qn, pn, stepsToGo - 1)
       }
     }
 
-    val (qn, pn) = leapFrog(qo, po - (calcUgrad(qo, sigs) :* uep) / 2.0, ul)
-    val hn = calcU(qn, sigs) + (pn dot pn) / 2.0
-    if (metCheck(ho,hn)) (qn, acc + 1) else (qo, acc)
+    val (qn, pn) = leapFrog(qo, po - (calcGradU(qo, hierarchicalVar) :* epsilon) / 2.0, steps)
+    val hn = totalEnergy(qn, hierarchicalVar, pn)
+    if (metCheck(ho, hn)) (qn, 1) else (qo, 0)
   }
 
-  final def stdDevSample(sqmis: Double, n: Int) = sqrt(
-    sqmis / (2.0 * Gamma((n.toDouble + 3) / 2.0, 1.0).sample())
+  final def stdDevSample(sqMis: Double, freeParameters: Int) = sqrt(
+    sqMis / (2.0 * Gamma((freeParameters.toDouble + 3.0) / 2.0, 1.0).sample())
     )
 
   //Pass initial values to rl
   @tailrec
   final def hmcRunner(maxIt: Int, report: Int, iter: Int, acc: Int,
-    rl: List[(DenseVector[Double], List[Double])]):
-    List[(DenseVector[Double], List[Double])] = {
-    if (iter == maxIt) {
-      val (qn, accn) = hmcUpdate(rl(0)._1, rl(0)._2, acc)
-      val gibbsVar = gibbsUpdate(qn)
-      (qn, gibbsVar) :: rl
+    rl: List[(Position, HierarchicalList)]):
+    List[(Position, HierarchicalList)] = iter match {
+    case maxit => {
+      val (qn, acceptedNew) = hmcUpdate(rl(0)._1, rl(0)._2)
+      val hierarchicalVar = gibbsUpdate(qn)
+      (qn, hierarchicalVar) :: rl
     }
-    else {
-      val (qn, accn) = hmcUpdate(rl(0)._1, rl(0)._2, acc)
-      val gibbsVar = gibbsUpdate(qn)
-      val currU = calcU(qn, gibbsVar)
+    case _ => {
+      val (qn, acceptedNew) = hmcUpdate(rl(0)._1, rl(0)._2)
+      val hierarchicalVar = gibbsUpdate(qn)
+      val currU = calcU(qn, hierarchicalVar)
       if (iter % report == 0) {
-        print("\nIteration "); print(iter); print(" of "); println(maxIt)
-        print("U: "); println(currU)
-        print("Acceptance: "); println(acc.toDouble / iter.toDouble)
+        println("\nIteration $iter of $maxIt")
+        println("U: $currU")
+        println("Acceptance: ${(acc + acceptedNew).toDouble / iter.toDouble}")
       }
-      hmcRunner(maxIt, report, iter + 1, accn, (qn, gibbsVar) :: rl)
+      hmcRunner(maxIt, report, iter + 1, acc + acceptedNew, (qn, hierarchicalVar) :: rl)
     }
   }
 }

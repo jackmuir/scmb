@@ -60,7 +60,7 @@ object sCMB {
       for (res <- results.dropRight(burn)) {
         for (tomo <- res._1.apply(0 to qlen - 1)) {p1.print(param); p1.print(" ")}
         for (topo <- res._1.apply(qlen to 2 * qlen - 1)) {p2.print(noise); p2.print(" ")}
-        for (topo <- res._3) {p2.print(noise); p3.print(" ")}
+        for (topo <- res._2) {p2.print(noise); p3.print(" ")}
         p1.print("\n"); p2.print("\n"); p3.print("\n")
       }
       p1.close(); p2.close(); p3.close()

@@ -23,11 +23,11 @@ SOFTWARE.
 */
 package scmb.shdatasets
 
-import breeze.linalg._
+import breeze.linalg.{DenseVector, DenseMatrix}
 
 import breeze.stats.distributions.Gamma
 
-import math.pow, math.abs, math.sqrt, math.Pi, math.cos, math.sin
+import math.{pow, abs, sqrt, Pi, cos, sin}
 
 import scala.io.Source
 
@@ -94,22 +94,64 @@ abstract class SHData(maxl: Int) {
     phi / (2.0 * sig * sig)
   }
 
-  def pCalcUgrad(g: DenseMatrix[Double], q: DenseVector[Double], d: DenseVector[Double], sig: Double): DenseVector[Double] = {
+  def pCalcGradU(g: DenseMatrix[Double], q: DenseVector[Double], d: DenseVector[Double], sig: Double): DenseVector[Double] = {
     val mis = misfit(g,q,d)
     (g.t * mis) / (sig * sig)
   }
 
-  def stringListToDouble(strList: List[String]): List[Double] = for (str <- strList) yield str.toDouble
+  def stringListToDouble(strList: List[String]): List[Double] = for (str <- strList if str.isEmpty == false) yield str.toDouble
 
-  def oTimesLoader(filename: String): List[List[Double]] = {
+  def splitAtLengthOne[T](listWithLengthOnes: List[List[T]]): (List[List[List[T]]], List[T]) = {
+    def splitAcc[T](result: List[List[List[T]]], rejects: List[T], remainder: List[List[T]]): (List[List[List[T]]], List[T]) = {
+      remainder.length match {
+        case 0 => (result, rejects)
+        case _ => {
+          val (rem, resPlus) = remainder.splitAt(remainder.lastIndexWhere(_.length == 1))
+          splitAcc(resPlus.tail :: result, resPlus.head.head :: rejects, rem)
+        }
+      }
+    }
+    splitAcc(Nil, Nil, listWithLengthOnes)
+  }
+
+  def fortranInConvert(filename: String): List[String] = Source.fromFile(filename).getLines().toList.drop(1)
+
+  def fileToListListDouble(infile: List[String]): List[List[Double]] = for(line <- infile) yield stringListToDouble(line.split(" ").toList)
+
+  def oTimesLoader(filename: String): List[Double] = {
     //otimes files have file data on the first line that we don't want; hence the drop
-    val oTimesFile = Source.fromFile(filename).getLines().toList.drop(1)
-    for(line <- oTimesFile) yield stringListToDouble(line.split(" ").toList)
+    val oTimesFile = fortranInConvert(filename)
+    val splitOTimesFile = fileToListListDouble(oTimesFile)
+    for (line <- splitOTimesFile) yield line(1) + line(2)
+  }
+
+  def pathLoader(filename: String): (List[List[List[Double]]], List[Double]) = {
+    //raypath files have file data on the first line that we don't want; hence the drop
+    val pathFile = fortranInConvert(filename)
+    val splitPathFile = fileToListListDouble(pathFile)
+    splitAtLengthOne(splitPathFile)
+  }
+
+  def combineInPairs[T](listToPair: List[T]): List[List[T]] = {
+    assert(listToPair.length % 2 == 0, "List must be of even length")
+    def pairUp[T](results: List[List[T]], remainder: List[T]): List[List[T]] = {
+      remainder.length match {
+        case 0 => results
+        case _ => pairUp(remainder.take(2) :: results, remainder.drop(2))
+      }
+    }
+    pairUp(Nil, listToPair).reverse
+  }
+
+  def getPathsAndReflections(dataM: Map[String, String]): (List[List[List[Double]]], List[List[List[List[Double]]]], List[List[Double]]) = {
+    val rayPaths = pathLoader(dataM("raypaths"))._1
+    val (topoRefs, rayParams) = pathLoader(dataM("topoin"))
+    (rayPaths, combineInPairs(topoRefs), combineInPairs(rayParams))
   }
 
   def checkDataContains(dataM: Map[String,String]) {
     assert(dataM.keySet.exists(_ == "otimes"), "Data map must contain an otimes file")
-    assert(dataM.keySet.exists(_ == "raypath"), "Data map must contain a raypath file")
+    assert(dataM.keySet.exists(_ == "raypaths"), "Data map must contain a raypath file")
     assert(dataM.keySet.exists(_ == "topoin"), "Data map must contain a topoin file")
   }
 }
@@ -121,8 +163,8 @@ class ResTT(maxl: Int, dataM: Map[String,String]) extends SHData(maxl) {
   val gm = gMatrix(midPoints,hList)
 
   def midpointsLoader(filename: String): List[List[Double]] = {
-    val midpointsFile = Source.fromFile(filename).getLines().toList
-    for(line <- midpointsFile) yield stringListToDouble(line.split(" ").toList)
+    val midpointsFile = fortranInConvert(filename)
+    fileToListListDouble(midpointsFile)
   }
 
   def gMatrix(mp: List[List[Double]], hl: List[List[Int]]): DenseMatrix[Double] = {
@@ -133,10 +175,12 @@ class ResTT(maxl: Int, dataM: Map[String,String]) extends SHData(maxl) {
 
 class PcPmP(maxl: Int, dataM: Map[String,String]) extends SHData(maxl) {
   checkDataContains(dataM)
-  }
+  val otimes = oTimesLoader(dataM("otimes"))
+  val (rayPaths, topoRefs, rayParams) = getPathsAndReflections(dataM)
 }
 
 class P4KPmPcP(maxl: Int, dataM: Map[String,String]) extends SHData(maxl) {
   checkDataContains(dataM)
-  }
+  val otimes = oTimesLoader(dataM("otimes"))
+  val (rayPaths, topoRefs, rayParams) = getPathsAndReflections(dataM)
 }

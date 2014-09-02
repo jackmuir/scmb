@@ -99,3 +99,4 @@ run 100 0.075 50000 100
 run 100 0.075 50000 100 8
 val loadnode = xml.XML.loadFile("datasets.xml")
 console
+consoleQuick
