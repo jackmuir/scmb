@@ -22,11 +22,13 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-import scmb.cmbhmc._
+import scmb.cmbhmc.cmbHMC
 
-import breeze.linalg._
+import breeze.linalg.DenseVector
 
-import java.io._
+import java.io.{File, PrintWriter}
+
+import xml.{XML, Node, Elem}
 
 object sCMB {
   def main(args: Array[String]) {
@@ -37,30 +39,28 @@ object sCMB {
     val maxIt = args(3).toInt
     val burn = args(4).toInt
     val report = args(5).toInt
-    val inxml = xml.XML.loadFile(args(6))
-    val datamaps = xmlToListMaps(inxml)
-
-    def xmlToListMaps(xmldata: scala.xml.Elem): List[Map[String, String]] = {
-      def xmlNodeToMap(node: scala.xml.Node): Map[String, String] = {
+    def xmlToListMaps(xmldata: Elem): List[Map[String, String]] = {
+      def xmlNodeToMap(node: Node): Map[String, String] = {
         Map("type" -> (node \ "type").text, "otimes" -> (node \ "otimes").text,
-            "raypath" -> (node \ "raypath").text, "topoin" -> (node \ "topoin").text)
+            "raypaths" -> (node \ "raypaths").text, "topoin" -> (node \ "topoin").text)
       }
       (for (set <- xmldata \ "set") yield xmlNodeToMap(set)).toList
     }
-
+    val inxml = XML.loadFile(args(6))
+    val datamaps = xmlToListMaps(inxml)
     val initialGuess =  List((DenseVector.rand[Double](qlen * 2), (for (set <- datamaps) yield 1.0).toList))
     val runner = new cmbHMC(l, ep, maxdeg, datamaps)
     val results = runner.hmcRunner(maxIt, report, 1, 0, initialGuess)
 
     //Inspiration: Rex Kerr - http://stackoverflow.com/questions/4604237/how-to-write-to-a-file-in-scala
-    def printParametersAndNoise(f1: java.io.File, f2: java.io.File, f3: java.io.file) {
-      val p1 = new java.io.PrintWriter(f1)
-      val p2 = new java.io.PrintWriter(f2)
-      val p3 = new java.io.PrintWriter(f3)
+    def printParametersAndNoise(f1: File, f2: File, f3: File) {
+      val p1 = new PrintWriter(f1)
+      val p2 = new PrintWriter(f2)
+      val p3 = new PrintWriter(f3)
       for (res <- results.dropRight(burn)) {
-        for (tomo <- res._1.apply(0 to qlen - 1)) {p1.print(param); p1.print(" ")}
-        for (topo <- res._1.apply(qlen to 2 * qlen - 1)) {p2.print(noise); p2.print(" ")}
-        for (topo <- res._2) {p2.print(noise); p3.print(" ")}
+        for (tomo <- res._1.apply(0 to qlen - 1)) {p1.print(tomo); p1.print(" ")}
+        for (topo <- res._1.apply(qlen to 2 * qlen - 1)) {p2.print(topo); p2.print(" ")}
+        for (noise <- res._2) {p2.print(noise); p3.print(" ")}
         p1.print("\n"); p2.print("\n"); p3.print("\n")
       }
       p1.close(); p2.close(); p3.close()

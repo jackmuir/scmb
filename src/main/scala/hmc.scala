@@ -23,7 +23,7 @@ SOFTWARE.
 */
 package scmb.hmc
 
-import breeze.linalg.DenseVector
+import breeze.linalg.{DenseVector, min}
 
 import breeze.stats.distributions.{Uniform, Gaussian, Gamma}
 
@@ -46,22 +46,22 @@ abstract class HMC(baseSteps: Int, baseEpsilon: Double) {
 
   final def metCheck(ho: Double, hn: Double): Boolean = log(uniformDev.sample()) < ho - hn
 
-  def calcU(q: Position, heirarchicalVar: List[Double]): Double
+  def calcU(q: Position, heirarchicalVar: HierarchicalList): Double
 
   def calcGradU(q: Position, hierarchicalVar: HierarchicalList): DenseVector[Double]
 
   final def totalEnergy(q: Position, p: Momentum, hierarchicalVar: HierarchicalList) = calcU(q, hierarchicalVar) + (p dot p) / 2.0
 
-  def gibbsUpdate(q: Position): HeirarchicalList
+  def gibbsUpdate(q: Position): HierarchicalList
 
   final def hmcUpdate(q: Position, hierarchicalVar: HierarchicalList): (Position, Int) = {
     val minHeirarchical = min(hierarchicalVar)
     val epsilon = baseEpsilon * minHeirarchical * minHeirarchical * (0.9 + 0.2 * uniformDev.sample()) // perturb epsilon pm 10% to avoid cyclic orbits
-    val steps = (baseSteps.toDouble * (0.9 + 0.2 * uDev.sample())).toInt
+    val steps = (baseSteps.toDouble * (0.9 + 0.2 * uniformDev.sample())).toInt
     val p = DenseVector(normalDev.sample(q.length).toArray)
-    val ho = totalEnergy(q, hierarchicalVar, p)
+    val ho = totalEnergy(q, p, hierarchicalVar)
     @tailrec
-    def leapFrog(qo: Position, po: Momentum, stepsToGo: Int): (Position, Momentum) = match stepsToGo {
+    def leapFrog(qo: Position, po: Momentum, stepsToGo: Int): (Position, Momentum) = stepsToGo match {
       case 1 => {
         val qn = qo + (po :* epsilon)
         val pn = po - (calcGradU(qn, hierarchicalVar) :* epsilon) / 2.0
@@ -74,9 +74,9 @@ abstract class HMC(baseSteps: Int, baseEpsilon: Double) {
       }
     }
 
-    val (qn, pn) = leapFrog(qo, po - (calcGradU(qo, hierarchicalVar) :* epsilon) / 2.0, steps)
-    val hn = totalEnergy(qn, hierarchicalVar, pn)
-    if (metCheck(ho, hn)) (qn, 1) else (qo, 0)
+    val (qn, pn) = leapFrog(q, p - (calcGradU(q, hierarchicalVar) :* epsilon) / 2.0, steps)
+    val hn = totalEnergy(qn, pn, hierarchicalVar)
+    if (metCheck(ho, hn)) (qn, 1) else (q, 0)
   }
 
   final def stdDevSample(sqMis: Double, freeParameters: Int) = sqrt(
@@ -88,21 +88,21 @@ abstract class HMC(baseSteps: Int, baseEpsilon: Double) {
   final def hmcRunner(maxIt: Int, report: Int, iter: Int, acc: Int,
     rl: List[(Position, HierarchicalList)]):
     List[(Position, HierarchicalList)] = iter match {
-    case maxit => {
-      val (qn, acceptedNew) = hmcUpdate(rl(0)._1, rl(0)._2)
-      val hierarchicalVar = gibbsUpdate(qn)
-      (qn, hierarchicalVar) :: rl
+    case `maxIt` => {
+      val (q, acceptedNew) = hmcUpdate(rl(0)._1, rl(0)._2)
+      val hierarchicalVar = gibbsUpdate(q)
+      (q, hierarchicalVar) :: rl
     }
     case _ => {
-      val (qn, acceptedNew) = hmcUpdate(rl(0)._1, rl(0)._2)
-      val hierarchicalVar = gibbsUpdate(qn)
-      val currU = calcU(qn, hierarchicalVar)
+      val (q, acceptedNew) = hmcUpdate(rl(0)._1, rl(0)._2)
+      val hierarchicalVar = gibbsUpdate(q)
+      val currU = calcU(q, hierarchicalVar)
       if (iter % report == 0) {
         println("\nIteration $iter of $maxIt")
         println("U: $currU")
         println("Acceptance: ${(acc + acceptedNew).toDouble / iter.toDouble}")
       }
-      hmcRunner(maxIt, report, iter + 1, acc + acceptedNew, (qn, hierarchicalVar) :: rl)
+      hmcRunner(maxIt, report, iter + 1, acc + acceptedNew, (q, hierarchicalVar) :: rl)
     }
   }
 }

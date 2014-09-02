@@ -2,6 +2,8 @@ name := "cmb_hmc"
 
 version := "0.1"
 
+libraryDependencies += "org.scala-lang.modules" %% "scala-xml" % "1.0.2"
+
 libraryDependencies  ++= Seq(
             // other dependencies here
             "org.scalanlp" % "breeze_2.10" % "0.9",
@@ -15,6 +17,8 @@ resolvers ++= Seq(
             "Sonatype Releases" at "https://oss.sonatype.org/content/repositories/releases/"
 )
 
+// faster compiling...
+incOptions := incOptions.value.withNameHashing(true)
 
 // Scala 2.9.2 is still supported for 0.2.1, but is dropped afterwards.
 // Don't use an earlier version of 2.10, you will probably get weird compiler crashes.
