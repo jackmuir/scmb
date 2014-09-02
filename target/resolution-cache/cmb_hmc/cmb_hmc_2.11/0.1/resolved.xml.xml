@@ -4,7 +4,7 @@
 		module="cmb_hmc_2.11"
 		revision="0.1"
 		status="integration"
-		publication="20140831172322"
+		publication="20140902210909"
 	>
 		<description>
 		cmb_hmc
@@ -34,6 +34,7 @@
 	<dependencies>
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.2" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.11.2" conf="scala-tool->default,optional(default);compile->default(compile)"/>
+		<dependency org="org.scala-lang.modules" name="scala-xml_2.11" rev="1.0.2" conf="compile->default(compile)"/>
 		<dependency org="org.scalanlp" name="breeze_2.10" rev="0.9" conf="compile->default(compile)"/>
 		<dependency org="org.scalanlp" name="breeze-natives_2.10" rev="0.9" conf="compile->default(compile)"/>
 	</dependencies>

@@ -34,6 +34,18 @@ import scala.io.Source
 abstract class SHData(maxl: Int) {
   val ml = maxl
   val hList = harmLister(ml, Nil)
+  val gMatrix: DenseMatrix[Double]
+  val residuals: DenseVector[Double]
+  val rCore = 3479.5
+  val vPlus = 13.6601
+  val vMinus = 8.0
+
+  def reflectTop(rayParam: Double): Double = -2.0 * sqrt(rCore * rCore / (vPlus * vPlus) - rayParam * rayParam)
+
+  def reflectBottom(rayParam: Double): Double = 2.0 * sqrt(rCore * rCore / (vMinus * vMinus) - rayParam * rayParam)
+
+  def transmitThrough(rayParam: Double): Double = - (sqrt(rCore * rCore / (vPlus * vPlus) - rayParam * rayParam) -
+                                                     sqrt(rCore * rCore / (vMinus * vMinus) - rayParam * rayParam))
 
   def ylm(l: Int, m: Int, ph: Double, th: Double): Double = {
     //compute (m)!!/sqrt((m)!) (supply 2* m for xfact fortran code)
@@ -118,11 +130,11 @@ abstract class SHData(maxl: Int) {
 
   def fileToListListDouble(infile: List[String]): List[List[Double]] = for(line <- infile) yield stringListToDouble(line.split(" ").toList)
 
-  def oTimesLoader(filename: String): List[Double] = {
+  def oTimesLoader(filename: String): Array[Double] = {
     //otimes files have file data on the first line that we don't want; hence the drop
     val oTimesFile = fortranInConvert(filename)
     val splitOTimesFile = fileToListListDouble(oTimesFile)
-    for (line <- splitOTimesFile) yield line(1) + line(2)
+    (for (line <- splitOTimesFile) yield line(1) + line(2)).toArray
   }
 
   def pathLoader(filename: String): (List[List[List[Double]]], List[Double]) = {
@@ -143,10 +155,10 @@ abstract class SHData(maxl: Int) {
     pairUp(Nil, listToPair).reverse
   }
 
-  def getPathsAndReflections(dataM: Map[String, String]): (List[List[List[Double]]], List[List[List[List[Double]]]], List[List[Double]]) = {
+  def getPathsAndReflections(dataM: Map[String, String]): (List[List[List[Double]]], List[List[List[Double]]], List[Double]) = {
     val rayPaths = pathLoader(dataM("raypaths"))._1
     val (topoRefs, rayParams) = pathLoader(dataM("topoin"))
-    (rayPaths, combineInPairs(topoRefs), combineInPairs(rayParams))
+    (rayPaths, topoRefs, rayParams)
   }
 
   def checkDataContains(dataM: Map[String,String]) {
@@ -154,33 +166,79 @@ abstract class SHData(maxl: Int) {
     assert(dataM.keySet.exists(_ == "raypaths"), "Data map must contain a raypath file")
     assert(dataM.keySet.exists(_ == "topoin"), "Data map must contain a topoin file")
   }
+
+  def gTomoMatrix(rayPaths: List[List[List[Double]]]): DenseMatrix[Double] = {
+    def gTomoMatElement(selectedRayPath: Int, harmonic: Int): Double = {
+      val List(l, m) = hList(harmonic)
+      val rayPath = rayPaths(selectedRayPath)
+      val pathSubSums = for (pathElement <- rayPath) yield llcylm(l, m, pathElement(1), pathElement(2))
+      (0.0 /: pathSubSums) (_ + _)
+    }
+    DenseMatrix.tabulate(rayPaths.length, hList.length){case (i, j) => gTomoMatElement(i, j)}
+  }
+
 }
 
 class ResTT(maxl: Int, dataM: Map[String,String]) extends SHData(maxl) {
   assert(dataM.keySet.exists(_ == "midpoints"), "Data map must contain a midpoints file")
   val midPoints = midpointsLoader(dataM("midpoints"))
   val residuals = DenseVector(midPoints.transpose.apply(5).toArray)
-  val gm = gMatrix(midPoints,hList)
+  val gMatrix = DenseMatrix.tabulate(midPoints.length, hList.length){
+    case (i, j) => llcylm(hList(j)(0), hList(j)(1), midPoints(i)(6), midPoints(i)(7))
+    }
 
   def midpointsLoader(filename: String): List[List[Double]] = {
     val midpointsFile = fortranInConvert(filename)
     fileToListListDouble(midpointsFile)
-  }
-
-  def gMatrix(mp: List[List[Double]], hl: List[List[Int]]): DenseMatrix[Double] = {
-    DenseMatrix.tabulate(mp.length, hl.length){case (i, j) => llcylm(hl(j)(0), hl(j)(1), mp(i)(6), mp(i)(7))}
   }
 }
 
 
 class PcPmP(maxl: Int, dataM: Map[String,String]) extends SHData(maxl) {
   checkDataContains(dataM)
-  val otimes = oTimesLoader(dataM("otimes"))
+  val residuals = DenseVector(oTimesLoader(dataM("otimes")))
   val (rayPaths, topoRefs, rayParams) = getPathsAndReflections(dataM)
+  val gTopoMatrix = {
+    def gTopoMatElement(selectedTopo: Int, harmonic: Int): Double = {
+      val List(l, m) = hList(harmonic)
+      val topoLat = topoRefs(selectedTopo)(0)(3)
+      val topoLon = topoRefs(selectedTopo)(0)(4)
+      val rayParam = rayParams(selectedTopo)
+      llcylm(l, m, topoLat, topoLon) * reflectTop(rayParam)
+    }
+    DenseMatrix.tabulate(topoRefs.length, hList.length){case (i, j) => gTopoMatElement(i, j)}
+  }
+
+  val gMatrix = DenseMatrix.horzcat(gTopoMatrix, gTomoMatrix(rayPaths))
+
 }
 
 class P4KPmPcP(maxl: Int, dataM: Map[String,String]) extends SHData(maxl) {
   checkDataContains(dataM)
-  val otimes = oTimesLoader(dataM("otimes"))
+  val residuals = DenseVector(oTimesLoader(dataM("otimes")))
   val (rayPaths, topoRefs, rayParams) = getPathsAndReflections(dataM)
+  val pairedTopoRefs = combineInPairs(topoRefs)
+  val pairedRayParams = combineInPairs(rayParams)
+  val gTopoMatrix = {
+    def gTopoMatElement(selectedTopo: Int, harmonic: Int): Double = {
+      val List(l, m) = hList(harmonic)
+      val p4kptopoLat = for (topo <- pairedTopoRefs(selectedTopo)(0)) yield topo(3)
+      val p4kptopoLon = for (topo <- pairedTopoRefs(selectedTopo)(0)) yield topo(4)
+      val p4kprayParam = pairedRayParams(selectedTopo)(0)
+      val pcptopoLat = pairedTopoRefs(selectedTopo)(1)(0)(3)
+      val pcptopoLon = pairedTopoRefs(selectedTopo)(1)(0)(4)
+      val pcprayParam = pairedRayParams(selectedTopo)(1)
+      // Ugly, but is there really a better way to do it?
+      llcylm(l, m, p4kptopoLat(0), p4kptopoLon(0)) * transmitThrough(p4kprayParam) +
+      llcylm(l, m, p4kptopoLat(1), p4kptopoLon(1)) * reflectBottom(p4kprayParam) +
+      llcylm(l, m, p4kptopoLat(2), p4kptopoLon(2)) * reflectBottom(p4kprayParam) +
+      llcylm(l, m, p4kptopoLat(3), p4kptopoLon(3)) * reflectBottom(p4kprayParam) +
+      llcylm(l, m, p4kptopoLat(4), p4kptopoLon(4)) * transmitThrough(p4kprayParam) -
+      llcylm(l, m, pcptopoLat, pcptopoLon) * reflectTop(pcprayParam)
+
+    }
+    DenseMatrix.tabulate(topoRefs.length, hList.length){case (i, j) => gTopoMatElement(i, j)}
+  }
+
+  val gMatrix = DenseMatrix.horzcat(gTopoMatrix, gTomoMatrix(rayPaths))
 }

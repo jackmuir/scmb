@@ -23,7 +23,7 @@ SOFTWARE.
 */
 package scmb.cmbhmc
 
-import breeze.linalg.DenseVector
+import breeze.linalg.{DenseVector, sum}
 
 import scmb.shdatasets._
 
@@ -32,26 +32,26 @@ import scmb.hmc._
 
 class cmbHMC(ll: Int, ee: Double, maxl: Int, dataSets: List[Map[String, String]]) extends HMC(ll, ee) {
   val cmbSets = for (dataSet <- dataSets) yield {
-    match dataSet("type") {
+    dataSet("type") match {
       case "residuals" => new ResTT(maxl, dataSet)
       case "PcP-P" => new PcPmP(maxl, dataSet)
       case "P4KP-PcP" => new P4KPmPcP(maxl, dataSet)
     }
   }
 
-  def calcU(q: DenseVector[Double], sigs: List[Double]): Double = {
-    val pSums = for (cmbSet <- cmbSets) yield cmbSet.pCalcU(cmbSet.gm, q, cmbSet.residuals, sigs(cmbSets.indexOf(cmbSet)))
+  def calcU(q: Position, sigs: HierarchicalList): Double = {
+    val pSums = for (cmbSet <- cmbSets) yield cmbSet.pCalcU(cmbSet.gMatrix, q, cmbSet.residuals, sigs(cmbSets.indexOf(cmbSet)))
     sum(pSums)
     }
 
-  def calcGradU(q: DenseVector[Double], sigs: List[Double]): DenseVector[Double] = {
-    val pGrads = for (cmbSet <- cmbSets) yield cmbSet.pCalcGradU(cmbSet.gm, q, cmbSet.residuals, sigs(cmbSets.indexOf(cmbSet)))
+  def calcGradU(q: Position, sigs: HierarchicalList): DenseVector[Double] = {
+    val pGrads = for (cmbSet <- cmbSets) yield cmbSet.pCalcGradU(cmbSet.gMatrix, q, cmbSet.residuals, sigs(cmbSets.indexOf(cmbSet)))
     pGrads.reduceLeft((a, b) => a + b)
   }
 
-  def gibbsUpdate(q: DenseVector[Double]): List[Double] = {
+  def gibbsUpdate(q: Position): HierarchicalList = {
     val noParameters = for (cmbSet <- cmbSets) yield cmbSet.residuals.length
-    val sqMisfits = for (cmbSet <- cmbSets) yield cmbSet.sqMisfit(cmbSet.gm, q, cmbSet.residuals)
+    val sqMisfits = for (cmbSet <- cmbSets) yield cmbSet.sqMisfit(cmbSet.gMatrix, q, cmbSet.residuals)
     for (sqm <- sqMisfits) yield stdDevSample(sqm, noParameters(sqMisfits.indexOf(sqm)))
   }
 }
