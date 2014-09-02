@@ -2,13 +2,13 @@
     <set>
       <type>PcP-P</type>
       <otimes>/User/jackmuir/Dropbox/Honours/Data/CMB/otimes_H_M_C_PcP_300km_Boschi.dat</otimes>
-      <raypath>/User/jackmuir/Dropbox/Honours/Data/CMB/ray_path_H_M_C_PcP_300km_Boschi.dat</raypath>
+      <raypaths>/User/jackmuir/Dropbox/Honours/Data/CMB/ray_path_H_M_C_PcP_300km_Boschi.dat</raypaths>
       <topoin>/User/jackmuir/Dropbox/Honours/Data/CMB/topo_in_H_M_C_PcP_300km_Boschi.dat</topoin>
     </set>
     <set>
       <type>P4KP-PcP</type>
       <otimes>/User/jackmuir/Dropbox/Honours/Data/CMB/otimes_T_P4KP_300km_Boschi.dat</otimes>
-      <raypath>/User/jackmuir/Dropbox/Honours/Data/CMB/ray_path_T_P4KP_300km_Boschi.dat</raypath>
+      <raypaths>/User/jackmuir/Dropbox/Honours/Data/CMB/ray_path_T_P4KP_300km_Boschi.dat</raypaths>
       <topoin>/User/jackmuir/Dropbox/Honours/Data/CMB/topo_in_T_P4KP_300km_Boschi.dat</topoin>
     </set>
 </datasets>
