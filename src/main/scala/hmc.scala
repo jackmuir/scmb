@@ -98,9 +98,9 @@ abstract class HMC(baseSteps: Int, baseEpsilon: Double) {
       val hierarchicalVar = gibbsUpdate(q)
       val currU = calcU(q, hierarchicalVar)
       if (iter % report == 0) {
-        println("\nIteration $iter of $maxIt")
-        println("U: $currU")
-        println("Acceptance: ${(acc + acceptedNew).toDouble / iter.toDouble}")
+        println(s"\nIteration $iter of $maxIt")
+        println(s"U: $currU")
+        println(s"Acceptance: ${100.0 * (acc + acceptedNew).toDouble / iter.toDouble}")
       }
       hmcRunner(maxIt, report, iter + 1, acc + acceptedNew, (q, hierarchicalVar) :: rl)
     }

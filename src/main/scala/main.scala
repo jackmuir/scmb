@@ -48,19 +48,18 @@ object sCMB {
     }
     val inxml = XML.loadFile(args(6))
     val datamaps = xmlToListMaps(inxml)
-    val initialGuess =  List((DenseVector.rand[Double](qlen * 2), (for (set <- datamaps) yield 1.0).toList))
+    val initialGuess =  List((DenseVector.zeros[Double](qlen * 2), (for (set <- datamaps) yield 1.0).toList))
     val runner = new cmbHMC(l, ep, maxdeg, datamaps)
     val results = runner.hmcRunner(maxIt, report, 1, 0, initialGuess)
 
-    //Inspiration: Rex Kerr - http://stackoverflow.com/questions/4604237/how-to-write-to-a-file-in-scala
     def printParametersAndNoise(f1: File, f2: File, f3: File) {
       val p1 = new PrintWriter(f1)
       val p2 = new PrintWriter(f2)
       val p3 = new PrintWriter(f3)
       for (res <- results.dropRight(burn)) {
-        for (tomo <- res._1.apply(0 to qlen - 1)) {p1.print(tomo); p1.print(" ")}
-        for (topo <- res._1.apply(qlen to 2 * qlen - 1)) {p2.print(topo); p2.print(" ")}
-        for (noise <- res._2) {p2.print(noise); p3.print(" ")}
+        for (tomo <- res._1.apply(0 to qlen - 1)) p1.print(s"$tomo ")
+        for (topo <- res._1.apply(qlen to 2 * qlen - 1)) p2.print(s"$topo ")
+        for (noise <- res._2) p3.print(s"$noise ")
         p1.print("\n"); p2.print("\n"); p3.print("\n")
       }
       p1.close(); p2.close(); p3.close()

@@ -4,7 +4,9 @@ from pandas.tools.plotting import autocorrelation_plot
 from pandas import Series
 from ylm import Ylmr as ylmr
 
-param = np.loadtxt('sha_parameters.dat')
+topo = np.loadtxt('topo_parameters.dat')
+
+tomo = np.loadtxt('tomo_parameters.dat')
 
 def slashandburn(data,burn,thin):
     return data[burn::thin]
