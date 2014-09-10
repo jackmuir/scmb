@@ -50,12 +50,14 @@ abstract class HMC(baseSteps: Int, baseEpsilon: Double) {
 
   def calcGradU(q: Position, hierarchicalVar: HierarchicalList): DenseVector[Double]
 
+  def mLogLike(q: Position, heirarchicalVar: HierarchicalList): Double
+
   final def totalEnergy(q: Position, p: Momentum, hierarchicalVar: HierarchicalList) = calcU(q, hierarchicalVar) + (p dot p) / 2.0
 
   def gibbsUpdate(q: Position): HierarchicalList
 
   final def hmcUpdate(q: Position, hierarchicalVar: HierarchicalList): (Position, Int) = {
-    val minHeirarchical = min(hierarchicalVar)
+    val minHeirarchical = min(min(hierarchicalVar), 1.0) // making maximum multiplier 1 stops the integration from going wildly unstable when in low probability areas
     val epsilon = baseEpsilon * minHeirarchical * minHeirarchical * (0.9 + 0.2 * uniformDev.sample()) // perturb epsilon pm 10% to avoid cyclic orbits
     val steps = (baseSteps.toDouble * (0.9 + 0.2 * uniformDev.sample())).toInt
     val p = DenseVector(normalDev.sample(q.length).toArray)
@@ -86,23 +88,25 @@ abstract class HMC(baseSteps: Int, baseEpsilon: Double) {
   //Pass initial values to rl
   @tailrec
   final def hmcRunner(maxIt: Int, report: Int, iter: Int, acc: Int,
-    rl: List[(Position, HierarchicalList)]):
-    List[(Position, HierarchicalList)] = iter match {
+    rl: List[(Position, HierarchicalList, Double)]):
+    List[(Position, HierarchicalList, Double)] = iter match {
     case `maxIt` => {
       val (q, acceptedNew) = hmcUpdate(rl(0)._1, rl(0)._2)
       val hierarchicalVar = gibbsUpdate(q)
-      (q, hierarchicalVar) :: rl
+      val mLL = mLogLike(q, hierarchicalVar)
+      (q, hierarchicalVar, mLL) :: rl
     }
     case _ => {
       val (q, acceptedNew) = hmcUpdate(rl(0)._1, rl(0)._2)
       val hierarchicalVar = gibbsUpdate(q)
       val currU = calcU(q, hierarchicalVar)
+      val mLL = mLogLike(q, hierarchicalVar)
       if (iter % report == 0) {
         println(s"\nIteration $iter of $maxIt")
         println(s"U: $currU")
         println(s"Acceptance: ${100.0 * (acc + acceptedNew).toDouble / iter.toDouble}")
       }
-      hmcRunner(maxIt, report, iter + 1, acc + acceptedNew, (q, hierarchicalVar) :: rl)
+      hmcRunner(maxIt, report, iter + 1, acc + acceptedNew, (q, hierarchicalVar, mLL) :: rl)
     }
   }
 }

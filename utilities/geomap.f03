@@ -2,8 +2,8 @@ program geomap
     !computes average and standard deviation maps from SHA
     use sha_helper
     implicit none
-    integer, parameter :: no_paramsets = 40000 !can burn just by dropping the no here as scala results printed in reverse
-    integer, parameter :: harm_order = 8
+    integer, parameter :: no_paramsets = 4001 !can burn just by dropping the no here as scala results printed in reverse
+    integer, parameter :: harm_order = 4
     integer, parameter :: harm_array_length = (harm_order+1)**2
     integer, parameter :: deg_spacing = 1
     integer, parameter :: lat_no = 180/deg_spacing+1, lon_no = 360/deg_spacing+1
@@ -43,7 +43,7 @@ program geomap
     end do
     print *, 'Matrix set up'
     print *, 'Calculating mean'
-    open(10, file = 'sha_parameters.dat', status = 'old')
+    open(10, file = 'topo_parameters.dat', status = 'old')
     do i = 1, no_paramsets
         read(10, *) parameters
         do k = 1, harm_array_length
@@ -65,8 +65,9 @@ program geomap
     std = sqrt(std/(no_paramsets-1)) !-1 to correct for bias slightly
     close(10)
     print *, 'Writing to file'
-    open(11, file = 'geomaps.dat', status = 'replace')
+    open(11, file = 'topo_geomaps.dat', status = 'replace')
     do j = 1, alength
         write(11, *) lat(j), lon(j), mean(j), std(j) 
     end do
+    print *, 'Mean max / min = ', maxval(mean), minval(mean), 'Max std. = ', maxval(std)
 end program geomap

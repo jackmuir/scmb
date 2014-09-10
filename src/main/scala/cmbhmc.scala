@@ -29,6 +29,7 @@ import scmb.shdatasets._
 
 import scmb.hmc._
 
+import math.{log, Pi}
 
 class cmbHMC(ll: Int, ee: Double, maxl: Int, dataSets: List[Map[String, String]]) extends HMC(ll, ee) {
   val cmbSets = for (dataSet <- dataSets) yield {
@@ -41,12 +42,18 @@ class cmbHMC(ll: Int, ee: Double, maxl: Int, dataSets: List[Map[String, String]]
 
   def calcU(q: Position, sigs: HierarchicalList): Double = {
     val pSums = for (cmbSet <- cmbSets) yield cmbSet.pCalcU(cmbSet.gMatrix, q, cmbSet.residuals, sigs(cmbSets.indexOf(cmbSet)))
-    sum(pSums)
+    pSums.reduceLeft(_ + _)
     }
 
   def calcGradU(q: Position, sigs: HierarchicalList): DenseVector[Double] = {
     val pGrads = for (cmbSet <- cmbSets) yield cmbSet.pCalcGradU(cmbSet.gMatrix, q, cmbSet.residuals, sigs(cmbSets.indexOf(cmbSet)))
     pGrads.reduceLeft(_ + _)
+  }
+
+  def mLogLike(q: Position, sigs: HierarchicalList): Double = {
+    calcU(q, sigs) +
+    (for (cmbSet <- cmbSets) yield cmbSet.gMatrix.rows.toDouble * log(sigs(cmbSets.indexOf(cmbSet)))).reduceLeft(_ + _) +
+    (for (cmbSet <- cmbSets) yield cmbSet.gMatrix.rows.toDouble).reduceLeft(_ + _) * log(2.0 * Pi) / 2.0
   }
 
   def gibbsUpdate(q: Position): HierarchicalList = {

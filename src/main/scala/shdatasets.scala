@@ -40,12 +40,15 @@ abstract class SHData(maxl: Int) {
   val vPlus = 13.6601
   val vMinus = 8.0
 
-  def reflectTop(rayParam: Double): Double = -2.0 * sqrt(rCore * rCore / (vPlus * vPlus) - rayParam * rayParam)
+  def topLeg(rayParam: Double): Double = - sqrt(rCore * rCore / (vPlus * vPlus) - rayParam * rayParam) / rCore
 
-  def reflectBottom(rayParam: Double): Double = 2.0 * sqrt(rCore * rCore / (vMinus * vMinus) - rayParam * rayParam)
+  def bottomLeg(rayParam: Double): Double = sqrt(rCore * rCore / (vMinus * vMinus) - rayParam * rayParam) / rCore
 
-  def transmitThrough(rayParam: Double): Double = - (sqrt(rCore * rCore / (vPlus * vPlus) - rayParam * rayParam) -
-                                                     sqrt(rCore * rCore / (vMinus * vMinus) - rayParam * rayParam))
+  def reflectTop(rayParam: Double): Double = 2.0 * topLeg(rayParam)
+
+  def reflectBottom(rayParam: Double): Double = 2.0 * bottomLeg(rayParam)
+
+  def transmitThrough(rayParam: Double): Double = topLeg(rayParam) + bottomLeg(rayParam)
 
   def ylm(l: Int, m: Int, ph: Double, th: Double): Double = {
     //compute (m)!!/sqrt((m)!) (supply 2* m for xfact fortran code)
@@ -81,7 +84,7 @@ abstract class SHData(maxl: Int) {
     }
 
     if (m > 0) modpLgndr(l, m, cos(th)) * cos(m * ph) * sqrt(2.0)
-    else if (m < 0 ) pow(-1,m).toDouble * modpLgndr(l, -m, cos(th)) * sin(-m * ph) * sqrt(2.0) else modpLgndr(l, m, cos(th))
+    else if (m < 0 ) modpLgndr(l, -m, cos(th)) * sin(-m * ph) * sqrt(2.0) else modpLgndr(l, m, cos(th))
   }
 
   def llcylm(l: Int, m: Int, lat: Double, lon: Double): Double = ylm(l, m, Pi * lon / 180.0, -Pi * (lat - 90) / 180.0)
@@ -173,7 +176,7 @@ abstract class SHData(maxl: Int) {
     def gTomoMatElement(selectedRayPath: Int, harmonic: Int): Double = {
       val List(l, m) = hList(harmonic)
       val rayPath = rayPaths(selectedRayPath)
-      val pathSubSums = for (pathElement <- rayPath) yield llcylm(l, m, pathElement(1), pathElement(2))
+      val pathSubSums = for (pathElement <- rayPath) yield pathElement(3) * llcylm(l, m, pathElement(1), pathElement(2))
       (0.0 /: pathSubSums) (_ + _)
     }
     DenseMatrix.tabulate(rayPaths.length, hList.length){case (i, j) => gTomoMatElement(i, j)}
@@ -210,9 +213,10 @@ class PcPmP(maxl: Int, dataM: Map[String,String]) extends SHData(maxl) {
     }
     DenseMatrix.tabulate(topoRefs.length, hList.length){case (i, j) => gTopoMatElement(i, j)}
   }
-
-  val gMatrix = DenseMatrix.horzcat(gTopoMatrix, gTomoMatrix(rayPaths))
-
+////////!!!!!!!!////////!!!!!!!!////////!!!!!!!!////////!!!!!!!!////////!!!!!!!!
+  val gMatrix = DenseMatrix.horzcat(gTomoMatrix(rayPaths), gTopoMatrix :* 1000.0)
+// times 1000 to approximately equalize elements; have to multiply resulting parameters by 1000 to get true
+// radial values
 }
 
 class P4KPmPcP(maxl: Int, dataM: Map[String,String]) extends SHData(maxl) {
@@ -231,16 +235,33 @@ class P4KPmPcP(maxl: Int, dataM: Map[String,String]) extends SHData(maxl) {
       val pcptopoLon = pairedTopoRefs(selectedTopo)(1)(0)(4)
       val pcprayParam = pairedRayParams(selectedTopo)(1)
       // Ugly, but is there really a better way to do it?
-      llcylm(l, m, p4kptopoLat(0), p4kptopoLon(0)) * transmitThrough(p4kprayParam) +
-      llcylm(l, m, p4kptopoLat(1), p4kptopoLon(1)) * reflectBottom(p4kprayParam) +
-      llcylm(l, m, p4kptopoLat(2), p4kptopoLon(2)) * reflectBottom(p4kprayParam) +
-      llcylm(l, m, p4kptopoLat(3), p4kptopoLon(3)) * reflectBottom(p4kprayParam) +
-      llcylm(l, m, p4kptopoLat(4), p4kptopoLon(4)) * transmitThrough(p4kprayParam) -
-      llcylm(l, m, pcptopoLat, pcptopoLon) * reflectTop(pcprayParam)
-
+      val len = p4kptopoLat.length
+      len match {
+        case 5 => { llcylm(l, m, p4kptopoLat(0), p4kptopoLon(0)) * transmitThrough(p4kprayParam) +
+          llcylm(l, m, p4kptopoLat(1), p4kptopoLon(1)) * reflectBottom(p4kprayParam) +
+          llcylm(l, m, p4kptopoLat(2), p4kptopoLon(2)) * reflectBottom(p4kprayParam) +
+          llcylm(l, m, p4kptopoLat(3), p4kptopoLon(3)) * reflectBottom(p4kprayParam) +
+          llcylm(l, m, p4kptopoLat(4), p4kptopoLon(4)) * transmitThrough(p4kprayParam) -
+          llcylm(l, m, pcptopoLat, pcptopoLon) * reflectTop(pcprayParam)
+        }
+        case _ => { val n = (len - 3) / 2
+          // This is the diffracted case; the transmission coefficients are at 2 different locations
+          // and so are split into top and bottom legs
+          llcylm(l, m, p4kptopoLat(0), p4kptopoLon(0)) * topLeg(p4kprayParam) +
+          llcylm(l, m, p4kptopoLat(n - 1), p4kptopoLon(n - 1)) * bottomLeg(p4kprayParam) +
+          llcylm(l, m, p4kptopoLat(n), p4kptopoLon(n)) * reflectBottom(p4kprayParam) +
+          llcylm(l, m, p4kptopoLat(n + 1), p4kptopoLon(n + 1)) * reflectBottom(p4kprayParam) +
+          llcylm(l, m, p4kptopoLat(n + 2), p4kptopoLon(n + 2)) * reflectBottom(p4kprayParam) +
+          llcylm(l, m, p4kptopoLat(n + 3), p4kptopoLon(n + 3)) * bottomLeg(p4kprayParam) +
+          llcylm(l, m, p4kptopoLat(len - 1), p4kptopoLon(len - 1)) * topLeg(p4kprayParam) -
+          llcylm(l, m, pcptopoLat, pcptopoLon) * reflectTop(pcprayParam)
+        }
+      }
     }
     DenseMatrix.tabulate(pairedTopoRefs.length, hList.length){case (i, j) => gTopoMatElement(i, j)}
   }
-
-  val gMatrix = DenseMatrix.horzcat(gTopoMatrix, gTomoMatrix(rayPaths))
+  ////////!!!!!!!!////////!!!!!!!!////////!!!!!!!!////////!!!!!!!!////////!!!!!!!!
+  val gMatrix = DenseMatrix.horzcat(gTomoMatrix(rayPaths), gTopoMatrix :* 1000.0)
+  // times 1000 to approximately equalize elements; have to multiply resulting parameters by 1000 to get true
+  // radial values
 }
