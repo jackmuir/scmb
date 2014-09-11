@@ -185,3 +185,49 @@ run 5 1000 0.00007 100000 10000 1000 datasets.xml
 run 7 1000 0.00006 100000 10000 1000 datasets.xml
 quit
 exit
+compile
+run 1 datasets.xml
+consoleQuick
+run 1 datasets.xml
+consoleQuick
+run 1 datasets.xml
+update
+compile
+run 1 datasets.xml
+consoleQuick
+update
+run 1 datasets.xml
+clean
+run 1 datasets.xml
+clean
+compile
+clean
+update
+run 1 datasets.xml
+compile
+clean
+compile
+run 1 datasets.xml
+clean
+compile
+clean
+update
+clean
+update
+clean
+update
+run 1 datasets.xml
+run 12 datasets.xml
+run 1 datasets.xml 0.77594 1.35092
+run 2 datasets.xml 0.744968 0.744683
+run 2 datasets.xml 0.713682 0.707566
+run 3 datasets.xml 0.713682 0.707566
+run 5 datasets.xml 0.684847 0.6543
+run 7 datasets.xml 0.645644 0.634888
+run 4 datasets.xml 0.69 0.68
+run 6 datasets.xml 0.65 0.65
+run 6 datasets.xml 0.66 0.64
+run 9 datasets.xml 0.602955 0.554693
+run 4 1000 0.0001 100000 10000 1000 datasetsp4kponly.xml
+run 4 1000 0.00075 100000 10000 1000 datasetsp4kponly.xml
+run 4 1000 0.000075 100000 10000 1000 datasetsp4kponly.xml

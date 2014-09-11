@@ -77,6 +77,8 @@ import java.io.{File, PrintWriter}
 
 import xml.{XML, Node, Elem}
 
+import breeze.optimize.{DiffFunction, LBFGS}
+
 
 object sCMB {
   def main(args: Array[String]) {
@@ -117,63 +119,42 @@ object sCMB {
     printParametersAndNoise(new File(s"tomo_parameters_l_$maxdeg.dat"),
                             new File(s"topo_parameters_l_$maxdeg.dat"),
                             new File(s"noise_parameters_l_$maxdeg.dat"))
-    val numData = (for (set <- runner.cmbSets) yield set.gMatrix.rows).reduceLeft(_ + _)
-    val minmLL = min(for (res <- results.dropRight(burn)) yield res._3)
-    val k = runner.cmbSets(0).gMatrix.cols.toDouble//qlen.toDouble
-    val aicc = 2.0 * minmLL + 2.0 * k + (2.0 * k * (k + 1.0)) / (numData.toDouble - k - 1.0)
-    println(s"Max Log Likelihood = ${-minmLL}")
-    println(s"AICC = $aicc")
   }
 }
 
-/*object ttSHA {
+object aicCalc {
   def main(args: Array[String]) {
-    val maxl = args(0).toInt
-    val l  = args(1).toInt
-    val ep = args(2).toDouble
-    val maxIt = args(3).toInt
-    val burn = args(4).toInt
-    val report = args(5).toInt
-    val testfile = "/Users/jackmuir/Dropbox/Honours/Data/CMB/midpoints_H_M_C_PcP.final"
-    val datamap = List(Map("midpoints"->testfile))
-    val sha = new resSHA(l, ep, maxl, datamap)
-    val results = sha.hmcRunner(81, maxIt, report, 1, 0, List((DenseVector.rand[Double](81),List(1.0))))
-
-    //Inspiration: Rex Kerr - http://stackoverflow.com/questions/4604237/how-to-write-to-a-file-in-scala
-    def printParametersAndNoise(f1: java.io.File, f2: java.io.File) {
-      val p1 = new java.io.PrintWriter(f1)
-      val p2 = new java.io.PrintWriter(f2)
-      for (res <- results.dropRight(burn)) {
-        for (param <- res._1) {p1.print(param); p1.print(" ")}
-        for (noise <- res._2) {p2.print(noise); p2.print(" ")}
-        p1.print("\n"); p2.print("\n")
+    val l = args(0).toInt
+    def xmlToListMaps(xmldata: Elem): List[Map[String, String]] = {
+      def xmlNodeToMap(node: Node): Map[String, String] = {
+        Map("type" -> (node \ "type").text, "otimes" -> (node \ "otimes").text,
+            "raypaths" -> (node \ "raypaths").text, "topoin" -> (node \ "topoin").text)
       }
-      p1.close(); p2.close()
+      (for (set <- xmldata \ "set") yield xmlNodeToMap(set)).toList
     }
-
-    printParametersAndNoise(new File("sha_parameters.dat"), new File("noise_parameters.dat"))
-
-
-  }
+    val inxml = XML.loadFile(args(1))
+    val datamaps = xmlToListMaps(inxml)
+    val qlen = (l + 1) * (l + 1)
+    val initialGuess =  List((DenseVector.zeros[Double](qlen * 2), (for (set <- datamaps) yield 1.0).toList, Double.PositiveInfinity))
+    val runner = new cmbHMC(1, 1.0, l, datamaps) // just dummy l, epsilon: we don't use them
+    val mll = new DiffFunction[DenseVector[Double]] {
+      def calculate(x: DenseVector[Double]) = {
+        val sigs = x(0 to runner.cmbSets.length - 1).toArray.toList
+        val q = x(runner.cmbSets.length to -1)
+        (runner.mLogLike(q, sigs), runner.mLogLikeGrad(q, sigs))
+      }
+    }
+    val lbfgs = new LBFGS[DenseVector[Double]](maxIter=40000, m=7)
+    val k = runner.cmbSets(0).gMatrix.cols + runner.cmbSets.length
+    val n = (for (set <- runner.cmbSets) yield set.gMatrix.rows).reduceLeft(_ + _)
+    val initial = DenseVector.zeros[Double](k)
+    initial(0 to runner.cmbSets.length - 1) := DenseVector(args(2).toDouble,args(3).toDouble)
+    val minimized = lbfgs.minimize(mll, initial)
+    val minMLogLike = mll(minimized)
+    println(s"Sigma at min = ${minimized(0 to runner.cmbSets.length -1)}")
+    println(s"- Max Log Likelihood = $minMLogLike")
+    val aicc = 2.0 * minMLogLike + 2.0 * k.toDouble +
+              (2.0 * k.toDouble * (k.toDouble + 1.0)) / (n.toDouble - k.toDouble - 1.0)
+    println(s"AICc Estimate = $aicc")
+    }
 }
-
-val maxdeg = 5
-val qlen = (maxdeg + 1) * (maxdeg + 1)
-val l  = 1
-val ep = 1.0
-val maxIt = 1
-val burn = 0
-val report = 1
-def xmlToListMaps(xmldata: Elem): List[Map[String, String]] = {
-  def xmlNodeToMap(node: Node): Map[String, String] = {
-    Map("type" -> (node \ "type").text, "otimes" -> (node \ "otimes").text,
-        "raypaths" -> (node \ "raypaths").text, "topoin" -> (node \ "topoin").text)
-  }
-  (for (set <- xmldata \ "set") yield xmlNodeToMap(set)).toList
-}
-val inxml = XML.loadFile("datasets.xml")
-val datamaps = xmlToListMaps(inxml)
-val initialGuess =  List((DenseVector.zeros[Double](qlen * 2), (for (set <- datamaps) yield 1.0).toList))
-val runner = new cmbHMC(l, ep, maxdeg, datamaps)
-
-*/

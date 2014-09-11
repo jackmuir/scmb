@@ -1,11 +1,9 @@
-[0m[[0minfo[0m] [0mRunning sCMB 7 1000 0.00006 100000 10000 1000 datasets.xml[0m
+[0m[[0minfo[0m] [0mRunning sCMB 4 1000 0.000075 100000 10000 1000 datasetsp4kponly.xml[0m
 [0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
-[0m[[0mdebug[0m] [0mWaiting for thread run-main-5 to terminate.[0m
 [0m[[0mdebug[0m] [0m  Classpath:[0m
-[0m[[0mdebug[0m] [0m	/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.11/classes[0m
-[0m[[0mdebug[0m] [0m	/Users/jackmuir/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.2.jar[0m
-[0m[[0mdebug[0m] [0m	/Users/jackmuir/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.2.jar[0m
-[0m[[0mdebug[0m] [0m	/Users/jackmuir/.ivy2/cache/org.scalanlp/breeze_2.10/jars/breeze_2.10-0.9.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes[0m
+[0m[[0mdebug[0m] [0m	/Users/jackmuir/.sbt/boot/scala-2.10.4/lib/scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/jackmuir/.ivy2/cache/org.scalanlp/breeze_2.10/jars/breeze_2.10-0.10-SNAPSHOT.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/jackmuir/.ivy2/cache/org.scalanlp/breeze-macros_2.10/jars/breeze-macros_2.10-0.3.1.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/jackmuir/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.3.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/jackmuir/.ivy2/cache/com.github.fommil.netlib/core/jars/core-1.1.2.jar[0m
@@ -19,7 +17,7 @@
 [0m[[0mdebug[0m] [0m	/Users/jackmuir/.ivy2/cache/org.spire-math/spire-macros_2.10/jars/spire-macros_2.10-0.7.4.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/jackmuir/.ivy2/cache/org.scalamacros/quasiquotes_2.10/jars/quasiquotes_2.10-2.0.0.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/jackmuir/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.5.jar[0m
-[0m[[0mdebug[0m] [0m	/Users/jackmuir/.ivy2/cache/org.scalanlp/breeze-natives_2.10/jars/breeze-natives_2.10-0.9.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/jackmuir/.ivy2/cache/org.scalanlp/breeze-natives_2.10/jars/breeze-natives_2.10-0.10-SNAPSHOT.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/jackmuir/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-osx-x86_64/jars/netlib-native_ref-osx-x86_64-1.1-natives.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/jackmuir/.ivy2/cache/com.github.fommil.netlib/native_ref-java/jars/native_ref-java-1.1.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/jackmuir/.ivy2/cache/com.github.fommil/jniloader/jars/jniloader-1.1.jar[0m
@@ -35,7 +33,8 @@
 [0m[[0mdebug[0m] [0m	/Users/jackmuir/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-linux-armhf/jars/netlib-native_system-linux-armhf-1.1-natives.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/jackmuir/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-win-x86_64/jars/netlib-native_system-win-x86_64-1.1-natives.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/jackmuir/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-win-i686/jars/netlib-native_system-win-i686-1.1-natives.jar[0m
-[0m[[0mdebug[0m] [0m	Thread run-main-5 exited.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
+[0m[[0mdebug[0m] [0m	Thread run-main-0 exited.[0m
 [0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m
 [0m[[0mdebug[0m] [0mSandboxed run complete..[0m
 [0m[[0mdebug[0m] [0mExited with code 0[0m

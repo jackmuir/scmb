@@ -56,6 +56,14 @@ class cmbHMC(ll: Int, ee: Double, maxl: Int, dataSets: List[Map[String, String]]
     (for (cmbSet <- cmbSets) yield cmbSet.gMatrix.rows.toDouble).reduceLeft(_ + _) * log(2.0 * Pi) / 2.0
   }
 
+  def mLogLikeGrad(q: Position, sigs: HierarchicalList): DenseVector[Double] = {
+    val k = q.length + sigs.length
+    val mllGrad = DenseVector.zeros[Double](k)
+    mllGrad(0 to sigs.length - 1) := DenseVector.tabulate(sigs.length){i => cmbSets(i).gMatrix.rows.toDouble / sigs(i)}
+    mllGrad(sigs.length to k - 1) := calcGradU(q, sigs)
+    mllGrad
+  }
+
   def gibbsUpdate(q: Position): HierarchicalList = {
     val noParameters = for (cmbSet <- cmbSets) yield cmbSet.residuals.length
     val sqMisfits = for (cmbSet <- cmbSets) yield cmbSet.sqMisfit(cmbSet.gMatrix, q, cmbSet.residuals)

@@ -52,6 +52,8 @@ abstract class HMC(baseSteps: Int, baseEpsilon: Double) {
 
   def mLogLike(q: Position, heirarchicalVar: HierarchicalList): Double
 
+  def mLogLikeGrad(q: Position, heirarchicalVar: HierarchicalList): DenseVector[Double]
+
   final def totalEnergy(q: Position, p: Momentum, hierarchicalVar: HierarchicalList) = calcU(q, hierarchicalVar) + (p dot p) / 2.0
 
   def gibbsUpdate(q: Position): HierarchicalList
