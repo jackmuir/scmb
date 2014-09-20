@@ -70,25 +70,3 @@ class cmbHMC(ll: Int, ee: Double, maxl: Int, dataSets: List[Map[String, String]]
     for (sqm <- sqMisfits) yield stdDevSample(sqm, noParameters(sqMisfits.indexOf(sqm)))
   }
 }
-
-/*
-class resSHA(ll: Int, ee: Double, maxl: Int, dataSets: List[Map[String, String]]) extends HMC(ll, ee) {
-  val resSets = for (dataSet <- dataSets) yield new ResTT(maxl, dataSet)
-
-  def calcU(q: DenseVector[Double], sigs: List[Double]): Double = {
-    val pSums = for (resSet <- resSets) yield resSet.pCalcU(resSet.gm, q, resSet.residuals, sigs(resSets.indexOf(resSet)))
-    sum(pSums)
-    }
-
-  def calcGradU(q: DenseVector[Double], sigs: List[Double]): DenseVector[Double] = {
-    val pGrads = for (resSet <- resSets) yield resSet.pcalcGradU(resSet.gm, q, resSet.residuals, sigs(resSets.indexOf(resSet)))
-    pGrads.reduceLeft((a, b) => a + b)
-  }
-
-  def gibbsUpdate(q: DenseVector[Double]): List[Double] = {
-    val ns = for (resSet <- resSets) yield resSet.residuals.length
-    val sqMisfits = for (resSet <- resSets) yield resSet.sqMisfit(resSet.gm, q, resSet.residuals)
-    for (sqm <- sqMisfits) yield stdDevSample(sqm, ns(sqMisfits.indexOf(sqm)))
-  }
-}
-*/

@@ -1,0 +1,255 @@
+update
+console
+update
+set libraryDependencies += "org.scalanlp" % "breeze_2.10" % "0.9"
+set resolvers += "Sonatype Releases" at "https://oss.sonatype.org/content/repositories/releases/"
+console
+update
+console
+clean
+reload
+clean
+reload
+update
+console
+cd
+console
+:q
+console
+sbt reload
+sbt help
+help
+exit
+console
+exit
+console
+exit
+console
+exit
+console
+val a = List(("a","b","c"),(1,2,3))
+val a = List(("a","b","c"),("1","2","3"))
+console
+exit
+help
+update
+compile
+run 1 2
+run ttSHA 1 2
+compile
+run ttSHA 1 2
+run 1 2
+uberjar
+export-jars
+exit
+compile
+run 100 0.05
+run 100 0.01
+run 100 0.0001
+compile
+run 100 0.01
+run 100 0.001
+run 10 0.001
+compile
+run 10 0.001
+compile
+run 100 0.0001 10 1 
+compile
+run 100 0.0001 10 1 
+compile
+run 100 0.0001 10 1 
+quit
+:q
+exit
+compile
+run 100 0.0001 10 1 
+console
+run 100 0.0001 10 1 
+compile
+run 100 0.0001 10 1 
+compile
+run 100 0.0001 10 1 
+run 100 0.0001 1000 100 
+run 100 0.005 1000 100 
+run 100 0.001 1000 100 
+run 100 0.0001 1000 100 
+run 100 0.00001 1000 100 
+run 100 0.00001 10 1 
+run 100 0.005 10 1 
+run 100 0.0005 10 1 
+run 100 0.0001 10 1 
+run 100 0.00001 10 1 
+run 100 0.00001 1000 100 
+run 100 0.00001 100000 1000 
+console
+run 100 0.00001 100000 1000 
+console
+run 100 0.00001 100000 1000 
+run 100 0.05 100000 1000 
+run 100 0.01 100000 1000 
+console
+run 100 0.05 1000 100
+run 100 0.05 10000 100
+console
+run 100 0.05 10000 100
+run 100 0.1 10000 100
+run 100 0.1 1007500 100
+run 100 0.075 10000 100
+run 100 0.075 50000 100
+run 100 0.075 50000 100 8
+val loadnode = xml.XML.loadFile("datasets.xml")
+console
+consoleQuick
+exit
+compile
+consoleQuick
+compile
+update
+compile
+update
+compile
+consoleQuick
+compile
+update
+compile
+update
+compile
+exit
+compile
+run 4 100 0.0001 50000 10000 100 datasets.xml
+clean
+run 4 100 0.0001 50000 10000 100 datasets.xml
+consoleQuick
+run 4 100 0.0001 50000 10000 100 datasets.xml
+run 4 100 0.00000001 50000 10000 100 datasets.xml
+run 4 100 0.0001 50000 10000 100 datasets.xml
+run 4 100 0.00001 50000 10000 100 datasets.xml
+run 4 100 0.000001 50000 10000 100 datasets.xml
+run 4 100 0.000005 50000 10000 100 datasets.xml
+run 4 100 0.0000025 50000 10000 100 datasets.xml
+run 4 100 0.0000015 50000 10000 100 datasets.xml
+run 4 100 0.000001 50000 10000 100 datasets.xml
+run 4 100 0.0000005 50000 10000 100 datasets.xml
+run 4 100 0.0000005 500 100 10 datasets.xml
+run 4 100 0.0000001 500 100 10 datasets.xml
+run 4 100 0.0000002 500 100 10 datasets.xml
+run 4 100 0.0000005 500 100 10 datasets.xml
+run 4 100 0.0000008 500 100 10 datasets.xml
+run 4 100 0.0000006 500 100 10 datasets.xml
+run 4 100 0.0000005 500 100 10 datasets.xml
+run 4 100 0.00000055 500 100 10 datasets.xml
+run 4 100 0.000000525 500 100 10 datasets.xml
+run 4 100 0.000000525 5000 100 10 datasets.xml
+run 4 25 0.000000525 5000 100 10 datasets.xml
+run 4 25 0.00000051 5000 100 10 datasets.xml
+run 4 25 0.00000050 5000 100 10 datasets.xml
+run 4 25 0.000000501 5000 100 10 datasets.xml
+run 4 25 0.000000505 5000 100 10 datasets.xml
+run 4 25 0.000000509 5000 100 10 datasets.xml
+consoleQuick
+run 4 25 0.000000509 5000 100 10 datasets.xml
+run 4 25 0.00001 5000 100 10 datasets.xml
+run 4 25 0.001 5000 100 10 datasets.xml
+run 4 25 0.0001 5000 100 10 datasets.xml
+run 4 100 0.0005 5000 100 10 datasets.xml
+run 4 100 0.0001 5000 1000 100 datasets.xml
+run 4 100 0.0003 5000 1000 100 datasets.xml
+exit
+run 4 100 0.0003 5000 1000 100 datasets.xml
+run 4 500 0.0004 5000 1000 100 datasets.xml
+run 4 500 0.0005 5000 1000 100 datasets.xml
+run 4 1000 0.00025 5000 1000 100 datasets.xml
+run 4 1000 0.0001 5000 1000 100 datasets.xml
+clean
+console
+run 4 1000 0.0001 5000 1000 100 datasets.xml
+consoleQuick
+clean
+console
+run 4 1000 0.0001 5000 1000 100 datasets.xml
+run 1 1000 0.0001 5000 1000 100 datasets.xml
+run 1 1000 0.0001 100000 10000 1000 datasets.xml
+run 1000 0.0001 100000 10000 1000 datasets.xml
+run 2 1000 0.0001 100000 10000 1000 datasets.xml
+run 2 1000 0.000075 100000 10000 1000 datasets.xml
+run 3 1000 0.000075 100000 10000 1000 datasets.xml
+run 4 1000 0.000075 100000 10000 1000 datasets.xml
+run 5 1000 0.00007 100000 10000 1000 datasets.xml
+run 7 1000 0.00006 100000 10000 1000 datasets.xml
+run 9 1000 0.00006 100000 10000 1000 datasets.xml
+run 1 1000 0.0001 100000 10000 1000 datasets.xml
+run 2 1000 0.0001 100000 10000 1000 datasets.xml
+run 3 1000 0.000075 100000 10000 1000 datasets.xml
+run 2 1000 0.000075 100000 10000 1000 datasets.xml
+run 5 1000 0.00007 100000 10000 1000 datasets.xml
+run 7 1000 0.00006 100000 10000 1000 datasets.xml
+quit
+exit
+compile
+run 1 datasets.xml
+consoleQuick
+run 1 datasets.xml
+consoleQuick
+run 1 datasets.xml
+update
+compile
+run 1 datasets.xml
+consoleQuick
+update
+run 1 datasets.xml
+clean
+run 1 datasets.xml
+clean
+compile
+clean
+update
+run 1 datasets.xml
+compile
+clean
+compile
+run 1 datasets.xml
+clean
+compile
+clean
+update
+clean
+update
+clean
+update
+run 1 datasets.xml
+run 12 datasets.xml
+run 4 datasets.xml 0.7013 0.681025
+run 6 datasets.xml 0.676 0.645
+run 8 datasets.xml 0.629176 0.585146
+run 4 10 0.0000001 10000 1000 100 datasets.xml
+run 4 1000 0.0001 100000 10000 1000 datasetssyntheticharmoncis.xml
+run 4 1000 0.0001 100000 10000 1000 datasetssyntheticharmonics.xml
+run 4 1000 0.00065 100000 10000 1000 datasetssyntheticharmonics.xml
+run 4 1000 0.0001 100000 10000 1000 datasetssyntheticharmonics.xml
+run 4 1000 0.00065 100000 10000 1000 datasetssyntheticharmonics.xml
+run 4 1000 0.00065 100000 10000 1000 datasetssyntheticcheckerboard.xml
+run 4 1000 0.0005 100000 10000 1000 datasetssyntheticcheckerboard.xml
+run 4 1000 0.0005 100000 10000 1000 datasets.xml
+run 4 1000 0.0001 100000 10000 1000 datasets.xml
+run 4 1000 0.0001 100000 10000 1000 datasetssyntheticcheckerboard.xml
+run 4 1000 0.0001 100000 10000 1000 datasetssyntheticharmonics.xml
+run 4 1000 0.000065 100000 10000 1000 datasetssyntheticharmonics.xml
+run 4 1000 0.000075 100000 10000 1000 datasetssyntheticharmonics.xml
+run 4 1000 0.00009 100000 10000 1000 datasetssyntheticharmonics.xml
+run 4 1000 0.00008 100000 10000 1000 datasetssyntheticharmonics.xml
+run 4 1000 0.000085 100000 10000 1000 datasetssyntheticharmonics.xml
+run 4 1000 0.00008 100000 10000 1000 datasetssyntheticharmonics.xml
+run 4 1000 0.0001 100000 10000 1000 datasetssyntheticharmonics.xml
+run 4 1000 0.00008 100000 10000 1000 datasetssyntheticharmonics.xml
+exit
+run 4 1000 0.00008 100000 10000 1000 datasetssyntheticharmonics.xml
+exit
+run 5 1000 0.00008 100000 10000 1000 datasetssyntheticharmonics.xml
+run 5 1000 0.000065 100000 10000 1000 datasetssyntheticharmonics.xml
+run 6 1000 0.000065 100000 10000 1000 datasetssyntheticharmonics.xml
+exit
+run 4 datasetssyntheticharmonics 0.334677 0.250995
+run 4 datasetssyntheticharmonics.xml 0.334677 0.250995
+run 5 datasetssyntheticharmonics.xml 0.297857 0.212786
+run 6 datasetssyntheticharmonics.xml 0.273475 0.137827
+run 7 1000 0.000065 100000 10000 1000 datasetssyntheticharmonics.xml

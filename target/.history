@@ -218,16 +218,45 @@ clean
 update
 run 1 datasets.xml
 run 12 datasets.xml
-run 1 datasets.xml 0.77594 1.35092
-run 2 datasets.xml 0.744968 0.744683
-run 2 datasets.xml 0.713682 0.707566
-run 3 datasets.xml 0.713682 0.707566
-run 5 datasets.xml 0.684847 0.6543
-run 7 datasets.xml 0.645644 0.634888
-run 4 datasets.xml 0.69 0.68
-run 6 datasets.xml 0.65 0.65
-run 6 datasets.xml 0.66 0.64
-run 9 datasets.xml 0.602955 0.554693
-run 4 1000 0.0001 100000 10000 1000 datasetsp4kponly.xml
-run 4 1000 0.00075 100000 10000 1000 datasetsp4kponly.xml
-run 4 1000 0.000075 100000 10000 1000 datasetsp4kponly.xml
+run 4 datasets.xml 0.7013 0.681025
+run 6 datasets.xml 0.676 0.645
+run 8 datasets.xml 0.629176 0.585146
+run 4 10 0.0000001 10000 1000 100 datasets.xml
+run 4 1000 0.0001 100000 10000 1000 datasetssyntheticharmoncis.xml
+run 4 1000 0.0001 100000 10000 1000 datasetssyntheticharmonics.xml
+run 4 1000 0.00065 100000 10000 1000 datasetssyntheticharmonics.xml
+run 4 1000 0.0001 100000 10000 1000 datasetssyntheticharmonics.xml
+run 4 1000 0.00065 100000 10000 1000 datasetssyntheticharmonics.xml
+run 4 1000 0.00065 100000 10000 1000 datasetssyntheticcheckerboard.xml
+run 4 1000 0.0005 100000 10000 1000 datasetssyntheticcheckerboard.xml
+run 4 1000 0.0005 100000 10000 1000 datasets.xml
+run 4 1000 0.0001 100000 10000 1000 datasets.xml
+run 4 1000 0.0001 100000 10000 1000 datasetssyntheticcheckerboard.xml
+run 4 1000 0.0001 100000 10000 1000 datasetssyntheticharmonics.xml
+run 4 1000 0.000065 100000 10000 1000 datasetssyntheticharmonics.xml
+run 4 1000 0.000075 100000 10000 1000 datasetssyntheticharmonics.xml
+run 4 1000 0.00009 100000 10000 1000 datasetssyntheticharmonics.xml
+run 4 1000 0.00008 100000 10000 1000 datasetssyntheticharmonics.xml
+run 4 1000 0.000085 100000 10000 1000 datasetssyntheticharmonics.xml
+run 4 1000 0.00008 100000 10000 1000 datasetssyntheticharmonics.xml
+run 4 1000 0.0001 100000 10000 1000 datasetssyntheticharmonics.xml
+run 4 1000 0.00008 100000 10000 1000 datasetssyntheticharmonics.xml
+exit
+run 4 1000 0.00008 100000 10000 1000 datasetssyntheticharmonics.xml
+exit
+run 5 1000 0.00008 100000 10000 1000 datasetssyntheticharmonics.xml
+run 5 1000 0.000065 100000 10000 1000 datasetssyntheticharmonics.xml
+run 6 1000 0.000065 100000 10000 1000 datasetssyntheticharmonics.xml
+run 8 1000 0.000055 100000 10000 1000 datasetssyntheticharmonics.xml
+exit
+run 7 datasetssyntheticharmonics.xm 0.217748 0.103159
+run 7 datasetssyntheticharmonics.xml 0.217748 0.103159
+run 8 datasetssyntheticharmonics.xml 0.0839 0.071362
+run 4 1000 0.000085 100000 10000 1000 datasetssyntheticharmonics.xml
+run 4 1000 0.000075 100000 10000 1000 datasetssyntheticharmonics.xml
+run 4 1000 0.00008 100000 10000 1000 datasetssyntheticharmonics.xml
+run 4 1000 0.000075 100000 10000 1000 datasetssyntheticharmonics.xml
+run 6 1000 0.000075 100000 10000 1000 datasetssyntheticharmonics.xml
+run 6 1000 0.00007 100000 10000 1000 datasetssyntheticharmonics.xml
+run 4 datasetssyntheticharmonics.xml 0.374984 0.269083
+run 4 datasetssyntheticharmonics.xml 0.342309 0.228912
