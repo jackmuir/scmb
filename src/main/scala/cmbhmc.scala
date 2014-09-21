@@ -37,6 +37,7 @@ class cmbHMC(ll: Int, ee: Double, maxl: Int, dataSets: List[Map[String, String]]
       case "residuals" => new ResTT(maxl, dataSet)
       case "PcP-P" => new PcPmP(maxl, dataSet)
       case "P4KP-PcP" => new P4KPmPcP(maxl, dataSet)
+      case "PKPab-PKPbc" => new PKPabmPKPbc(maxl, dataSet)
     }
   }
 
