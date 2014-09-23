@@ -274,3 +274,5 @@ exit
 run 4 500 0.000125 100000 10000 10 datasetssyntheticharmonics.xml
 :q
 exit
+clean
+exit
