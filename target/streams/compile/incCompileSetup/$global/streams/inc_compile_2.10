@@ -19,12 +19,13 @@ name hashing:
 1 items
 0 -> true
 products:
-57 items
+75 items
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$1.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$2.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$3.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$4.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$5.class
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$6.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$calcGradU$1.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$calcU$1.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$gibbsUpdate$1.class
@@ -33,36 +34,53 @@ products:
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$mLogLike$3.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$mLogLike$4.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$mLogLikeGrad$1.class
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$misfits$1.class
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$varianceReduction$1.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/hmc.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/hmc/HMC.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/aicCalc$$anon$1.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/aicCalc$$anonfun$1.class
-/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/aicCalc$$anonfun$3.class
-/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/aicCalc$$anonfun$4.class
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/aicCalc$$anonfun$7.class
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/aicCalc$$anonfun$8.class
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/aicCalc$$anonfun$9.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/aicCalc$$anonfun$xmlToListMaps$2$1.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/aicCalc$.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/aicCalc.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$$anonfun$2.class
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$$anonfun$3.class
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$$anonfun$4.class
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$$anonfun$5.class
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$$anonfun$6$$anonfun$apply$6.class
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$$anonfun$6.class
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$$anonfun$printAvMisfits$1$1$$anonfun$apply$5.class
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$$anonfun$printAvMisfits$1$1.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$$anonfun$printParametersAndNoise$1$1$$anonfun$apply$1.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$$anonfun$printParametersAndNoise$1$1$$anonfun$apply$2.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$$anonfun$printParametersAndNoise$1$1$$anonfun$apply$3.class
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$$anonfun$printParametersAndNoise$1$1$$anonfun$apply$4.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$$anonfun$printParametersAndNoise$1$1.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$$anonfun$xmlToListMaps$1$1.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/P4KPmPcP$$anonfun$10.class
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/P4KPmPcP$$anonfun$11.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/P4KPmPcP$$anonfun$3.class
-/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/P4KPmPcP$$anonfun$9.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/P4KPmPcP.class
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/PKPabmPKPbc$$anonfun$12.class
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/PKPabmPKPbc$$anonfun$13.class
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/PKPabmPKPbc$$anonfun$14.class
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/PKPabmPKPbc$$anonfun$15.class
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/PKPabmPKPbc$$anonfun$4.class
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/PKPabmPKPbc.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/PcPmP$$anonfun$2.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/PcPmP.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/ResTT$$anonfun$1.class
-/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/ResTT$$anonfun$7.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/ResTT$$anonfun$8.class
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/ResTT$$anonfun$9.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/ResTT.class
-/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$4.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$5.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$6.class
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$7.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$checkDataContains$1.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$checkDataContains$2.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$checkDataContains$3.class
@@ -78,7 +96,7 @@ products:
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$stringListToDouble$2.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData.class
 binary dependencies:
-13 items
+12 items
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> /Users/jackmuir/.ivy2/cache/org.scalanlp/breeze_2.10/jars/breeze_2.10-0.10-SNAPSHOT.jar
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> /Users/jackmuir/.sbt/boot/scala-2.10.4/lib/scala-library.jar
@@ -88,7 +106,6 @@ binary dependencies:
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> /Users/jackmuir/.ivy2/cache/org.scalanlp/breeze_2.10/jars/breeze_2.10-0.10-SNAPSHOT.jar
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> /Users/jackmuir/.sbt/boot/scala-2.10.4/lib/scala-library.jar
-/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> /Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC.class
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> /Users/jackmuir/.ivy2/cache/org.scalanlp/breeze_2.10/jars/breeze_2.10-0.10-SNAPSHOT.jar
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> /Users/jackmuir/.sbt/boot/scala-2.10.4/lib/scala-library.jar
@@ -115,13 +132,14 @@ inheritance internal dependencies:
 inheritance external dependencies:
 0 items
 class names:
-57 items
+75 items
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> scmb.cmbhmc.cmbHMC
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> scmb.cmbhmc.cmbHMC$$anonfun$1
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> scmb.cmbhmc.cmbHMC$$anonfun$2
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> scmb.cmbhmc.cmbHMC$$anonfun$3
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> scmb.cmbhmc.cmbHMC$$anonfun$4
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> scmb.cmbhmc.cmbHMC$$anonfun$5
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> scmb.cmbhmc.cmbHMC$$anonfun$6
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> scmb.cmbhmc.cmbHMC$$anonfun$calcGradU$1
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> scmb.cmbhmc.cmbHMC$$anonfun$calcU$1
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> scmb.cmbhmc.cmbHMC$$anonfun$gibbsUpdate$1
@@ -130,36 +148,53 @@ class names:
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> scmb.cmbhmc.cmbHMC$$anonfun$mLogLike$3
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> scmb.cmbhmc.cmbHMC$$anonfun$mLogLike$4
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> scmb.cmbhmc.cmbHMC$$anonfun$mLogLikeGrad$1
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> scmb.cmbhmc.cmbHMC$$anonfun$misfits$1
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> scmb.cmbhmc.cmbHMC$$anonfun$varianceReduction$1
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/hmc.scala -> scmb.hmc.HMC
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> aicCalc
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> aicCalc$
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> aicCalc$$anon$1
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> aicCalc$$anonfun$1
-/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> aicCalc$$anonfun$3
-/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> aicCalc$$anonfun$4
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> aicCalc$$anonfun$7
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> aicCalc$$anonfun$8
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> aicCalc$$anonfun$9
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> aicCalc$$anonfun$xmlToListMaps$2$1
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> sCMB
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> sCMB$
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> sCMB$$anonfun$2
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> sCMB$$anonfun$3
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> sCMB$$anonfun$4
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> sCMB$$anonfun$5
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> sCMB$$anonfun$6
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> sCMB$$anonfun$6$$anonfun$apply$6
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> sCMB$$anonfun$printAvMisfits$1$1
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> sCMB$$anonfun$printAvMisfits$1$1$$anonfun$apply$5
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> sCMB$$anonfun$printParametersAndNoise$1$1
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> sCMB$$anonfun$printParametersAndNoise$1$1$$anonfun$apply$1
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> sCMB$$anonfun$printParametersAndNoise$1$1$$anonfun$apply$2
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> sCMB$$anonfun$printParametersAndNoise$1$1$$anonfun$apply$3
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> sCMB$$anonfun$printParametersAndNoise$1$1$$anonfun$apply$4
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> sCMB$$anonfun$xmlToListMaps$1$1
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> scmb.shdatasets.P4KPmPcP
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> scmb.shdatasets.P4KPmPcP$$anonfun$10
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> scmb.shdatasets.P4KPmPcP$$anonfun$11
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> scmb.shdatasets.P4KPmPcP$$anonfun$3
-/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> scmb.shdatasets.P4KPmPcP$$anonfun$9
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> scmb.shdatasets.PKPabmPKPbc
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> scmb.shdatasets.PKPabmPKPbc$$anonfun$12
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> scmb.shdatasets.PKPabmPKPbc$$anonfun$13
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> scmb.shdatasets.PKPabmPKPbc$$anonfun$14
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> scmb.shdatasets.PKPabmPKPbc$$anonfun$15
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> scmb.shdatasets.PKPabmPKPbc$$anonfun$4
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> scmb.shdatasets.PcPmP
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> scmb.shdatasets.PcPmP$$anonfun$2
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> scmb.shdatasets.ResTT
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> scmb.shdatasets.ResTT$$anonfun$1
-/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> scmb.shdatasets.ResTT$$anonfun$7
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> scmb.shdatasets.ResTT$$anonfun$8
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> scmb.shdatasets.ResTT$$anonfun$9
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> scmb.shdatasets.SHData
-/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> scmb.shdatasets.SHData$$anonfun$4
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> scmb.shdatasets.SHData$$anonfun$5
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> scmb.shdatasets.SHData$$anonfun$6
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> scmb.shdatasets.SHData$$anonfun$7
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> scmb.shdatasets.SHData$$anonfun$checkDataContains$1
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> scmb.shdatasets.SHData$$anonfun$checkDataContains$2
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> scmb.shdatasets.SHData$$anonfun$checkDataContains$3
@@ -174,7 +209,7 @@ class names:
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> scmb.shdatasets.SHData$$anonfun$stringListToDouble$1
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> scmb.shdatasets.SHData$$anonfun$stringListToDouble$2
 used names:
-537 items
+572 items
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> *
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> +
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> -
@@ -192,6 +227,7 @@ used names:
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> List
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> Map
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> P4KPmPcP
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> PKPabmPKPbc
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> PcPmP
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> Pi
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> Position
@@ -229,13 +265,16 @@ used names:
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> materializeClassTag
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> math
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> maxl
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> misfit
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> mllGrad
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> noParameters
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> pCalcGradU
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> pCalcU
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> pGrads
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> pSum
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> pSums
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> package
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> partVR
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> q
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> reduceLeft
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> residuals
@@ -247,6 +286,7 @@ used names:
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> sqMisfit
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> sqMisfits
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> sqm
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> sqrt
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> stdDevSample
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> storage
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> sum
@@ -281,7 +321,7 @@ used names:
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/hmc.scala -> Predef
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/hmc.scala -> StringContext
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/hmc.scala -> Tuple2
-/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/hmc.scala -> Tuple3
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/hmc.scala -> Tuple4
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/hmc.scala -> Uniform
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/hmc.scala -> _1
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/hmc.scala -> _2
@@ -356,6 +396,8 @@ used names:
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/hmc.scala -> totalEnergy
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/hmc.scala -> unchecked
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/hmc.scala -> uniformDev
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/hmc.scala -> vR
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/hmc.scala -> varianceReduction
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/hmc.scala -> x$10
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/hmc.scala -> x$11
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/hmc.scala -> x$12
@@ -398,34 +440,44 @@ used names:
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> \
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> _1
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> _2
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> _4
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> aicCalc
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> aicc
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> allMisfits
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> any2ArrowAssoc
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> apply
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> args
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> arrangedMisfits
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> augmentString
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> avResiduals
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> breeze
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> burn
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> canAddD
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> canBuildFrom
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> canSetD
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> canSlice
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> close
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> cmbHMC
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> cmbSet
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> cmbSets
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> cmbhmc
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> cols
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> conforms
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> datamaps
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> doubleArrayOps
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> dropRight
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> dv_s_Op_Double_OpDiv
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> ep
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> f1
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> f2
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> f3
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> f4
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> fieldDouble
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> foreach
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> gMatrix
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> hmcRunner
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> immutable
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> indexOf
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> initial
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> initialGuess
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> intWrapper
@@ -449,23 +501,31 @@ used names:
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> minMLogLike
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> minimize
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> minimized
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> misfits
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> mll
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> n
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> noResults
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> node
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> noise
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> optimize
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> p
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> p1
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> p2
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> p3
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> p4
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> package
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> print
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> printAvMisfits
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> printParametersAndNoise
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> printer
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> println
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> q
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> qlen
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> reduceLeft
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> report
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> res
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> resList
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> residual
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> results
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> rows
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> runner
@@ -485,6 +545,8 @@ used names:
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> toList
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> tomo
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> topo
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> transpose
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> vr
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> x
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> xml
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> xmlNodeToMap
@@ -524,6 +586,7 @@ used names:
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> Nil
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> Nothing
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> P4KPmPcP
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> PKPabmPKPbc
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> PcPmP
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> Pi
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> Predef
@@ -627,6 +690,7 @@ used names:
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> norm
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> oTimesFile
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> oTimesLoader
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> obsSq
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> op_DM_S_Double_OpMulScalar
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> p4kprayParam
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> p4kptopoLat
@@ -644,6 +708,12 @@ used names:
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> pcptopoLon
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> ph
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> phi
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> pkpabrayParam
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> pkpabtopoLat
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> pkpabtopoLon
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> pkpbcrayParam
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> pkpbctopoLat
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> pkpbctopoLon
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> pll
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> pmm
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> pmmp1
@@ -713,111 +783,122 @@ used names:
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> xfact
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> ylm
 product stamps:
-57 items
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/aicCalc$$anon$1.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/aicCalc$$anonfun$1.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/aicCalc$$anonfun$3.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/aicCalc$$anonfun$4.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/aicCalc$$anonfun$xmlToListMaps$2$1.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/aicCalc$.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/aicCalc.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$$anonfun$2.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$$anonfun$printParametersAndNoise$1$1$$anonfun$apply$1.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$$anonfun$printParametersAndNoise$1$1$$anonfun$apply$2.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$$anonfun$printParametersAndNoise$1$1$$anonfun$apply$3.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$$anonfun$printParametersAndNoise$1$1.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$$anonfun$xmlToListMaps$1$1.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$1.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$2.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$3.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$4.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$5.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$calcGradU$1.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$calcU$1.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$gibbsUpdate$1.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$mLogLike$1.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$mLogLike$2.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$mLogLike$3.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$mLogLike$4.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$mLogLikeGrad$1.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/hmc/HMC.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/P4KPmPcP$$anonfun$10.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/P4KPmPcP$$anonfun$3.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/P4KPmPcP$$anonfun$9.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/P4KPmPcP.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/PcPmP$$anonfun$2.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/PcPmP.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/ResTT$$anonfun$1.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/ResTT$$anonfun$7.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/ResTT$$anonfun$8.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/ResTT.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$4.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$5.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$6.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$checkDataContains$1.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$checkDataContains$2.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$checkDataContains$3.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$checkDataContains$4.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$checkDataContains$5.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$checkDataContains$6.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$combineInPairs$1.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$fileToListListDouble$1.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$gTomoMatrix$1.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$oTimesLoader$1.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$scmb$shdatasets$SHData$$gTomoMatElement$1$1.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$stringListToDouble$1.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$stringListToDouble$2.class -> lastModified(1410913893000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData.class -> lastModified(1410913893000)
+75 items
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/aicCalc$$anon$1.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/aicCalc$$anonfun$1.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/aicCalc$$anonfun$7.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/aicCalc$$anonfun$8.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/aicCalc$$anonfun$9.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/aicCalc$$anonfun$xmlToListMaps$2$1.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/aicCalc$.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/aicCalc.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$$anonfun$2.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$$anonfun$3.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$$anonfun$4.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$$anonfun$5.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$$anonfun$6$$anonfun$apply$6.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$$anonfun$6.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$$anonfun$printAvMisfits$1$1$$anonfun$apply$5.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$$anonfun$printAvMisfits$1$1.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$$anonfun$printParametersAndNoise$1$1$$anonfun$apply$1.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$$anonfun$printParametersAndNoise$1$1$$anonfun$apply$2.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$$anonfun$printParametersAndNoise$1$1$$anonfun$apply$3.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$$anonfun$printParametersAndNoise$1$1$$anonfun$apply$4.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$$anonfun$printParametersAndNoise$1$1.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$$anonfun$xmlToListMaps$1$1.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB$.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/sCMB.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$1.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$2.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$3.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$4.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$5.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$6.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$calcGradU$1.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$calcU$1.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$gibbsUpdate$1.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$mLogLike$1.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$mLogLike$2.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$mLogLike$3.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$mLogLike$4.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$mLogLikeGrad$1.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$misfits$1.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC$$anonfun$varianceReduction$1.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/hmc/HMC.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/P4KPmPcP$$anonfun$10.class -> lastModified(1411427730000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/P4KPmPcP$$anonfun$11.class -> lastModified(1411427730000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/P4KPmPcP$$anonfun$3.class -> lastModified(1411427730000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/P4KPmPcP.class -> lastModified(1411427729000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/PKPabmPKPbc$$anonfun$12.class -> lastModified(1411427730000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/PKPabmPKPbc$$anonfun$13.class -> lastModified(1411427730000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/PKPabmPKPbc$$anonfun$14.class -> lastModified(1411427730000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/PKPabmPKPbc$$anonfun$15.class -> lastModified(1411427730000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/PKPabmPKPbc$$anonfun$4.class -> lastModified(1411427730000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/PKPabmPKPbc.class -> lastModified(1411427730000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/PcPmP$$anonfun$2.class -> lastModified(1411427730000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/PcPmP.class -> lastModified(1411427730000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/ResTT$$anonfun$1.class -> lastModified(1411427730000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/ResTT$$anonfun$8.class -> lastModified(1411427730000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/ResTT$$anonfun$9.class -> lastModified(1411427730000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/ResTT.class -> lastModified(1411427730000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$5.class -> lastModified(1411427730000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$6.class -> lastModified(1411427730000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$7.class -> lastModified(1411427730000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$checkDataContains$1.class -> lastModified(1411427730000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$checkDataContains$2.class -> lastModified(1411427730000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$checkDataContains$3.class -> lastModified(1411427730000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$checkDataContains$4.class -> lastModified(1411427730000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$checkDataContains$5.class -> lastModified(1411427730000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$checkDataContains$6.class -> lastModified(1411427730000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$combineInPairs$1.class -> lastModified(1411427730000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$fileToListListDouble$1.class -> lastModified(1411427730000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$gTomoMatrix$1.class -> lastModified(1411427730000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$oTimesLoader$1.class -> lastModified(1411427730000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$scmb$shdatasets$SHData$$gTomoMatElement$1$1.class -> lastModified(1411427730000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$stringListToDouble$1.class -> lastModified(1411427730000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData$$anonfun$stringListToDouble$2.class -> lastModified(1411427730000)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/shdatasets/SHData.class -> lastModified(1411427730000)
 source stamps:
-5 items
-/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> hash(0d13fe3955579a5fe790f39539ae958452dbfc70)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/hmc.scala -> hash(67101a5ed90eedd28a8a0e2ef96315bde8d74705)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> hash(6200fde0ee6459208b88d7f74a543191533a3b35)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/rejects.scala -> hash(ee2ddc45b81baeac5e78c9900fdd122c953254e9)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> hash(6bf9d555387391f206e048a1fd5dd56e3b6a8faf)
-binary stamps:
 4 items
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> hash(25a229dc41f0e2d6710ee8fc6956234b31db8b10)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/hmc.scala -> hash(d80a63341b53e14c9c7c5c2c54d33559b426ad62)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> hash(1ef9714caa331587ffd323ea2dd70367b9faf67e)
+/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> hash(69a960a95a13b6e71ced70d38469d3e7425603bd)
+binary stamps:
+3 items
 /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar -> lastModified(1381430168000)
 /Users/jackmuir/.ivy2/cache/org.scalanlp/breeze_2.10/jars/breeze_2.10-0.10-SNAPSHOT.jar -> lastModified(1407902598000)
 /Users/jackmuir/.sbt/boot/scala-2.10.4/lib/scala-library.jar -> lastModified(1395179187000)
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC.class -> lastModified(1410913893000)
 class names:
-4 items
+3 items
 /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar -> java.lang.Object
-/Users/jackmuir/.ivy2/cache/org.scalanlp/breeze_2.10/jars/breeze_2.10-0.10-SNAPSHOT.jar -> breeze.linalg.operators.DenseVectorOps
-/Users/jackmuir/.sbt/boot/scala-2.10.4/lib/scala-library.jar -> scala.collection.LinearSeqOptimized
-/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes/scmb/cmbhmc/cmbHMC.class -> scmb.cmbhmc.cmbHMC
+/Users/jackmuir/.ivy2/cache/org.scalanlp/breeze_2.10/jars/breeze_2.10-0.10-SNAPSHOT.jar -> breeze.linalg.operators.DenseMatrixOps
+/Users/jackmuir/.sbt/boot/scala-2.10.4/lib/scala-library.jar -> scala.collection.MapLike
 internal apis:
-5 items
+4 items
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHC9oMdrAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAJXNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cEdrmfR0AAZub3RpZnlzcQB+AAw0Oh21dAAEd2FpdHNxAH4ADBvyYOB0AAZjbWJITUNzcQB+AAwORSP9dAANJGFzSW5zdGFuY2VPZnNxAH4ADEanGbl0AAp1bmlmb3JtRGV2c3EAfgAMLa2fJXQACWhtY1VwZGF0ZXNxAH4ADNl/0f90AAlobWNSdW5uZXJzcQB+AAwYXaVEdAAGZXF1YWxzc3EAfgAMf00N33QACWNhbGNHcmFkVXNxAH4ADBnUQi90AAhQb3NpdGlvbnNxAH4ADFftda50AAxhc0luc3RhbmNlT2ZzcQB+AAxNxnX6dAAMbUxvZ0xpa2VHcmFkc3EAfgAMimCd0nQACE1vbWVudHVtc3EAfgAMbBvMcHQADHN5bmNocm9uaXplZHNxAH4ADFNL+0N0AAhtTG9nTGlrZXNxAH4ADMQ/1Jt0AA0kaXNJbnN0YW5jZU9mc3EAfgAMBty8H3QADHN0ZERldlNhbXBsZXNxAH4ADNBBmWR0AAlub3JtYWxEZXZzcQB+AAwBW9FTdAAJbm90aWZ5QWxsc3EAfgAMH6FgwHQAB2NtYlNldHNzcQB+AAxwJWXTdAAMaXNJbnN0YW5jZU9mc3EAfgAMIhYEInQABjxpbml0PnNxAH4ADDSHCXZ0AAI9PXNxAH4ADJvDLbR0AAtnaWJic1VwZGF0ZXNxAH4ADFtUEiZ0AAVjYWxjVXNxAH4ADKPU4Wt0AAVjbG9uZXNxAH4ADBpLzft0ABBIaWVyYXJjaGljYWxMaXN0c3EAfgAMTG67EnQACHRvU3RyaW5nc3EAfgAMHlJT3XQAAiE9c3EAfgAMsgacmHQACGdldENsYXNzc3EAfgAM+8qGfXQAAm5lc3EAfgAMCXauHXQAC3RvdGFsRW5lcmd5c3EAfgAMWDlwSHQACG1ldENoZWNrc3EAfgAMPeisjXQAAmVxc3EAfgAMr326oXQAAiMjc3EAfgAMvHLhsHQACGZpbmFsaXplc3EAfgAM4y6KC3QACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAXNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AYXhyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAHQAEnNjbWIuY21iaG1jLmNtYkhNQ3VyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQACENsYXNzRGVmdXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAXQAGHNjYWxhLmFubm90YXRpb24udGFpbHJlY3NyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4Ae3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AegBwc3EAfgB/c3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AGFMAAlpbmhlcml0ZWRxAH4AYUwAB3BhcmVudHNxAH4AYXhxAH4Ag3NxAH4AegBwc3EAfgB/dXEAfgBcAAAAAHNxAH4AegBwc3EAfgB/dXEAfgBcAAAAAHNxAH4AegBwc3EAfgB/dXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAANzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgCCdAADSE1Dc3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgCCc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARzY21ic3EAfgCfdAADaG1jc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AKBzcQB+AJN0AAZPYmplY3RzcQB+AJdzcQB+AJp1cQB+AJ0AAAADc3EAfgCfdAAEamF2YXNxAH4An3QABGxhbmdxAH4ApnNxAH4Ak3QAA0FueXNxAH4Al3NxAH4AmnVxAH4AnQAAAAJzcQB+AJ90AAVzY2FsYXEAfgCmdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAAJzcgAReHNidGkuYXBpLlBhY2thZ2V+WY/2rs45WAIAAUwABG5hbWVxAH4ADXhwdAALc2NtYi5jbWJobWNzcQB+ALl0AARzY21ic3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFIgQVFE3VyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0AEMvVXNlcnMvamFja211aXIvRHJvcGJveC9Ib25vdXJzL0NvZGUvc2NtYi90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUDRP+OVVXml/nkPOVOa6VhFLb/HA=
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHABXwElAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAJ3NyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cEdrmfR0AAZub3RpZnlzcQB+AAw0Oh21dAAEd2FpdHNxAH4ADBvyYOB0AAZjbWJITUNzcQB+AAwORSP9dAANJGFzSW5zdGFuY2VPZnNxAH4ADEanGbl0AAp1bmlmb3JtRGV2c3EAfgAMLa2fJXQACWhtY1VwZGF0ZXNxAH4ADFhefqV0AAlobWNSdW5uZXJzcQB+AAwYXaVEdAAGZXF1YWxzc3EAfgAMf00N33QACWNhbGNHcmFkVXNxAH4ADBnUQi90AAhQb3NpdGlvbnNxAH4ADFftda50AAxhc0luc3RhbmNlT2ZzcQB+AAxNxnX6dAAMbUxvZ0xpa2VHcmFkc3EAfgAMimCd0nQACE1vbWVudHVtc3EAfgAMbBvMcHQADHN5bmNocm9uaXplZHNxAH4ADFNL+0N0AAhtTG9nTGlrZXNxAH4ADMQ/1Jt0AA0kaXNJbnN0YW5jZU9mc3EAfgAMBty8H3QADHN0ZERldlNhbXBsZXNxAH4ADNBBmWR0AAlub3JtYWxEZXZzcQB+AAwBW9FTdAAJbm90aWZ5QWxsc3EAfgAMH6FgwHQAB2NtYlNldHNzcQB+AAxwJWXTdAAMaXNJbnN0YW5jZU9mc3EAfgAMIhYEInQABjxpbml0PnNxAH4ADFTWjDJ0ABF2YXJpYW5jZVJlZHVjdGlvbnNxAH4ADL1vZR90AAdtaXNmaXRzc3EAfgAMNIcJdnQAAj09c3EAfgAMm8MttHQAC2dpYmJzVXBkYXRlc3EAfgAMW1QSJnQABWNhbGNVc3EAfgAMo9Tha3QABWNsb25lc3EAfgAMGkvN+3QAEEhpZXJhcmNoaWNhbExpc3RzcQB+AAxMbrsSdAAIdG9TdHJpbmdzcQB+AAweUlPddAACIT1zcQB+AAyyBpyYdAAIZ2V0Q2xhc3NzcQB+AAz7yoZ9dAACbmVzcQB+AAwJdq4ddAALdG90YWxFbmVyZ3lzcQB+AAxYOXBIdAAIbWV0Q2hlY2tzcQB+AAw96KyNdAACZXFzcQB+AAyvfbqhdAACIyNzcQB+AAy8cuGwdAAIZmluYWxpemVzcQB+AAzjLooLdAAIaGFzaENvZGVzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAABc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgBleHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAASc2NtYi5jbWJobWMuY21iSE1DdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAIQ2xhc3NEZWZ1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAABdAAYc2NhbGEuYW5ub3RhdGlvbi50YWlscmVjc3IAE3hzYnRpLlNhZmVMYXp5JEltcGxQAi6Tl5dAPwIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHAAcHNyACB4c2J0aS5TYWZlTGF6eSQkYW5vbmZ1biRzdHJpY3QkMQAAAAAAAAAAAgABTAAHdmFsdWUkMXEAfgB/eHBzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwc3EAfgB+AHBzcQB+AINzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AZUwACWluaGVyaXRlZHEAfgBlTAAHcGFyZW50c3EAfgBleHEAfgCHc3EAfgB+AHBzcQB+AIN1cQB+AGAAAAAAc3EAfgB+AHBzcQB+AIN1cQB+AGAAAAAAc3EAfgB+AHBzcQB+AIN1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAA3NyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADUwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+AIZ0AANITUNzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AIZzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAANzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABHNjbWJzcQB+AKN0AANobWNzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4ApHNxAH4Al3QABk9iamVjdHNxAH4Am3NxAH4AnnVxAH4AoQAAAANzcQB+AKN0AARqYXZhc3EAfgCjdAAEbGFuZ3EAfgCqc3EAfgCXdAADQW55c3EAfgCbc3EAfgCedXEAfgChAAAAAnNxAH4Ao3QABXNjYWxhcQB+AKp1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAnNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0AAtzY21iLmNtYmhtY3NxAH4AvXQABHNjbWJzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAUifpd+BdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAQy9Vc2Vycy9qYWNrbXVpci9Ecm9wYm94L0hvbm91cnMvQ29kZS9zY21iL3RhcmdldC9zY2FsYS0yLjEwL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABQloincQfDi1nEO6PxpViNLMduLEA==
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/hmc.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHBI+a3dAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAJHNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cIgci350AAZub3RpZnlzcQB+AAxPPzG8dAAEd2FpdHNxAH4ADMEkipN0AA0kYXNJbnN0YW5jZU9mc3EAfgAMdM11j3QACnVuaWZvcm1EZXZzcQB+AAy34dUKdAAJaG1jVXBkYXRlc3EAfgAM5Nw2BXQAA0hNQ3NxAH4ADOKy8hN0AAlobWNSdW5uZXJzcQB+AAyih+W1dAAGZXF1YWxzc3EAfgAM6cxRN3QACWNhbGNHcmFkVXNxAH4ADE9tYwR0AAhQb3NpdGlvbnNxAH4ADNtSdIJ0AAxhc0luc3RhbmNlT2ZzcQB+AAwGVMLMdAAMbUxvZ0xpa2VHcmFkc3EAfgAMBeCTsXQACE1vbWVudHVtc3EAfgAMXuBoOHQADHN5bmNocm9uaXplZHNxAH4ADCKG/1R0AAhtTG9nTGlrZXNxAH4ADIKvd/R0AA0kaXNJbnN0YW5jZU9mc3EAfgAMpZ/+RXQADHN0ZERldlNhbXBsZXNxAH4ADOnz7Hl0AAlub3JtYWxEZXZzcQB+AAwo0e5KdAAJbm90aWZ5QWxsc3EAfgAMj+pn5nQADGlzSW5zdGFuY2VPZnNxAH4ADIZri0J0AAY8aW5pdD5zcQB+AAwZKmCJdAACPT1zcQB+AAxsEatTdAALZ2liYnNVcGRhdGVzcQB+AAwel/tJdAAFY2FsY1VzcQB+AAxMHpvbdAAFY2xvbmVzcQB+AAy4RJzCdAAQSGllcmFyY2hpY2FsTGlzdHNxAH4ADEtxX1Z0AAh0b1N0cmluZ3NxAH4ADATJwwp0AAIhPXNxAH4ADGAb7R50AAhnZXRDbGFzc3NxAH4ADKw9+DJ0AAJuZXNxAH4ADC0+oUJ0AAt0b3RhbEVuZXJneXNxAH4ADCcFa4h0AAhtZXRDaGVja3NxAH4ADMppZRh0AAJlcXNxAH4ADJuhNJh0AAIjI3NxAH4ADKtDnd10AAhmaW5hbGl6ZXNxAH4ADGk8W9J0AAhoYXNoQ29kZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AF94cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc8cREyFpnNwkAgABQgAFZmxhZ3N4cAF0AAxzY21iLmhtYy5ITUN1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAhDbGFzc0RlZnVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAAF0ABhzY2FsYS5hbm5vdGF0aW9uLnRhaWxyZWNzcgATeHNidGkuU2FmZUxhenkkSW1wbFACLpOXl0A/AgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cABwc3IAIHhzYnRpLlNhZmVMYXp5JCRhbm9uZnVuJHN0cmljdCQxAAAAAAAAAAACAAFMAAd2YWx1ZSQxcQB+AHl4cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+AHgAcHNxAH4AfXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBfTAAJaW5oZXJpdGVkcQB+AF9MAAdwYXJlbnRzcQB+AF94cQB+AIFzcQB+AHgAcHNxAH4AfXVxAH4AWgAAAABzcQB+AHgAcHNxAH4AfXVxAH4AWgAAAABzcQB+AHgAcHNxAH4AfXVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAACc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4AgHQABk9iamVjdHNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4AgHNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAA3NyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AA14cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAEamF2YXNxAH4AnXQABGxhbmdzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4AnnNxAH4AkXQAA0FueXNxAH4AlXNxAH4AmHVxAH4AmwAAAAJzcQB+AJ10AAVzY2FsYXEAfgCkdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAAJzcgAReHNidGkuYXBpLlBhY2thZ2V+WY/2rs45WAIAAUwABG5hbWVxAH4ADXhwdAAIc2NtYi5obWNzcQB+AK50AARzY21ic3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFIgQVFE3VyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0AEMvVXNlcnMvamFja211aXIvRHJvcGJveC9Ib25vdXJzL0NvZGUvc2NtYi90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUZxAaXtkO7dKKig4u+WMVvejXRwU=
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHBB95AUAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAJnNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cIgci350AAZub3RpZnlzcQB+AAxPPzG8dAAEd2FpdHNxAH4ADMEkipN0AA0kYXNJbnN0YW5jZU9mc3EAfgAMdM11j3QACnVuaWZvcm1EZXZzcQB+AAy34dUKdAAJaG1jVXBkYXRlc3EAfgAM5Nw2BXQAA0hNQ3NxAH4ADIMNTAN0AAlobWNSdW5uZXJzcQB+AAyih+W1dAAGZXF1YWxzc3EAfgAM6cxRN3QACWNhbGNHcmFkVXNxAH4ADE9tYwR0AAhQb3NpdGlvbnNxAH4ADNtSdIJ0AAxhc0luc3RhbmNlT2ZzcQB+AAwGVMLMdAAMbUxvZ0xpa2VHcmFkc3EAfgAMBeCTsXQACE1vbWVudHVtc3EAfgAMXuBoOHQADHN5bmNocm9uaXplZHNxAH4ADCKG/1R0AAhtTG9nTGlrZXNxAH4ADIKvd/R0AA0kaXNJbnN0YW5jZU9mc3EAfgAMpZ/+RXQADHN0ZERldlNhbXBsZXNxAH4ADOnz7Hl0AAlub3JtYWxEZXZzcQB+AAwo0e5KdAAJbm90aWZ5QWxsc3EAfgAMj+pn5nQADGlzSW5zdGFuY2VPZnNxAH4ADIZri0J0AAY8aW5pdD5zcQB+AAxxUCFLdAARdmFyaWFuY2VSZWR1Y3Rpb25zcQB+AAwPpXbvdAAHbWlzZml0c3NxAH4ADBkqYIl0AAI9PXNxAH4ADGwRq1N0AAtnaWJic1VwZGF0ZXNxAH4ADB6X+0l0AAVjYWxjVXNxAH4ADEwem9t0AAVjbG9uZXNxAH4ADLhEnMJ0ABBIaWVyYXJjaGljYWxMaXN0c3EAfgAMS3FfVnQACHRvU3RyaW5nc3EAfgAMBMnDCnQAAiE9c3EAfgAMYBvtHnQACGdldENsYXNzc3EAfgAMrD34MnQAAm5lc3EAfgAMLT6hQnQAC3RvdGFsRW5lcmd5c3EAfgAMJwVriHQACG1ldENoZWNrc3EAfgAMymllGHQAAmVxc3EAfgAMm6E0mHQAAiMjc3EAfgAMq0Od3XQACGZpbmFsaXplc3EAfgAMaTxb0nQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAXNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AY3hyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAXQADHNjbWIuaG1jLkhNQ3VyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQACENsYXNzRGVmdXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAXQAGHNjYWxhLmFubm90YXRpb24udGFpbHJlY3NyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4AfXhwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AfABwc3EAfgCBc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AGNMAAlpbmhlcml0ZWRxAH4AY0wAB3BhcmVudHNxAH4AY3hxAH4AhXNxAH4AfABwc3EAfgCBdXEAfgBeAAAAAHNxAH4AfABwc3EAfgCBdXEAfgBeAAAAAHNxAH4AfABwc3EAfgCBdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAJzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgCEdAAGT2JqZWN0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgCEc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARqYXZhc3EAfgChdAAEbGFuZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCic3EAfgCVdAADQW55c3EAfgCZc3EAfgCcdXEAfgCfAAAAAnNxAH4AoXQABXNjYWxhcQB+AKh1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAnNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0AAhzY21iLmhtY3NxAH4AsnQABHNjbWJzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAUifpd+BdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAQy9Vc2Vycy9qYWNrbXVpci9Ecm9wYm94L0hvbm91cnMvQ29kZS9zY21iL3RhcmdldC9zY2FsYS0yLjEwL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABTYCmM0G1PhTJx8XCxU0zVZtCatYg==
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHD7odYZAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAFnNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cBIFlAt0AAZub3RpZnlzcQB+AAykxd6rdAAEd2FpdHNxAH4ADCjD5wN0AA0kYXNJbnN0YW5jZU9mc3EAfgAMd0faNHQAB2FpY0NhbGNzcQB+AAwfRh83dAAGZXF1YWxzc3EAfgAMlv8QmnQABHNDTUJzcQB+AAw85uh0dAAMYXNJbnN0YW5jZU9mc3EAfgAM+n4n0HQADHN5bmNocm9uaXplZHNxAH4ADOLkpBB0AA0kaXNJbnN0YW5jZU9mc3EAfgAM4fUC/HQABG1haW5zcQB+AAzIjhtDdAAJbm90aWZ5QWxsc3EAfgAMtOITfXQADGlzSW5zdGFuY2VPZnNxAH4ADIOtzJh0AAI9PXNxAH4ADEMc+mJ0AAVjbG9uZXNxAH4ADE6lZGp0AAh0b1N0cmluZ3NxAH4ADLoH2E10AAIhPXNxAH4ADFe8Uc90AAhnZXRDbGFzc3NxAH4ADDvrmwl0AAJuZXNxAH4ADBScBBt0AAJlcXNxAH4ADONKLdJ0AAIjI3NxAH4ADONZhaZ0AAhmaW5hbGl6ZXNxAH4ADOCRWRl0AAhoYXNoQ29kZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAJzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AEN4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc8cREyFpnNwkAgABQgAFZmxhZ3N4cABxAH4AGXVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgATeHNidGkuU2FmZUxhenkkSW1wbFACLpOXl0A/AgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cABwc3IAIHhzYnRpLlNhZmVMYXp5JCRhbm9uZnVuJHN0cmljdCQxAAAAAAAAAAACAAFMAAd2YWx1ZSQxcQB+AFt4cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+AFoAcHNxAH4AX3NyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBDTAAJaW5oZXJpdGVkcQB+AENMAAdwYXJlbnRzcQB+AEN4cQB+AGNzcQB+AFoAcHNxAH4AX3VxAH4APgAAAAFzcgANeHNidGkuYXBpLkRlZlK+n+J8tDZpAgACTAAKcmV0dXJuVHlwZXQAEEx4c2J0aS9hcGkvVHlwZTtbAA92YWx1ZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9QYXJhbWV0ZXJMaXN0O3hxAH4ARHEAfgBNdXEAfgBOAAAAAHNxAH4AUABxAH4AIXVxAH4AUgAAAABzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgBidAAEVW5pdHNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4AYnNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAAnNyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AA14cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAFc2NhbGFzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4AgHVyABpbTHhzYnRpLmFwaS5QYXJhbWV0ZXJMaXN0O/XTOh3ys3DuAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJMaXN01sW8HGRJdOMCAAJaAAppc0ltcGxpY2l0WwAKcGFyYW1ldGVyc3QAHFtMeHNidGkvYXBpL01ldGhvZFBhcmFtZXRlcjt4cAB1cgAcW0x4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyO8+4xV2l3bVtAgAAeHAAAAABc3IAGXhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXIfRa4X00mw6gIABFoACmhhc0RlZmF1bHRMAAhtb2RpZmllcnQAHUx4c2J0aS9hcGkvUGFyYW1ldGVyTW9kaWZpZXI7TAAEbmFtZXEAfgANTAADdHBlcQB+AG14cAB+cgAbeHNidGkuYXBpLlBhcmFtZXRlck1vZGlmaWVyAAAAAAAAAAASAAB4cQB+AFV0AAVQbGFpbnQABGFyZ3NzcgAXeHNidGkuYXBpLlBhcmFtZXRlcml6ZWQWbO5pA8m7fwIAAkwACGJhc2VUeXBlcQB+AHRbAA10eXBlQXJndW1lbnRzdAARW0x4c2J0aS9hcGkvVHlwZTt4cQB+AGJzcQB+AHN0AAVBcnJheXEAfgB5dXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAFzcQB+AHN0AAZTdHJpbmdzcQB+AHdzcQB+AHp1cQB+AH0AAAADc3EAfgB/dAAEamF2YXNxAH4Af3QABGxhbmdxAH4AhHNxAH4AWgBwc3EAfgBfdXEAfgA+AAAAAHNxAH4AWgBwc3EAfgBfdXEAfgCYAAAAAnNxAH4Ac3QABk9iamVjdHEAfgCcc3EAfgBzdAADQW55cQB+AHlzcQB+AEBxAH4ATXVxAH4ATgAAAABzcQB+AFAAcQB+ABV1cQB+AFIAAAAAcQB+AFZ1cQB+AFgAAAAAc3EAfgBaAHBzcQB+AF9xAH4AZHNxAH4AWgBwc3EAfgBfc3EAfgBnc3EAfgBaAHBzcQB+AF91cQB+AD4AAAABc3EAfgBscQB+AE11cQB+AE4AAAAAc3EAfgBQAHEAfgAhdXEAfgBSAAAAAHNxAH4Ac3EAfgB2c3EAfgB3c3EAfgB6dXEAfgB9AAAAAnNxAH4Af3EAfgCCcQB+AIR1cQB+AIUAAAABc3EAfgCHAHVxAH4AigAAAAFzcQB+AIwAcQB+AJBxAH4AknNxAH4Ak3NxAH4Ac3EAfgCXcQB+AL91cQB+AJgAAAABc3EAfgBzcQB+AJtzcQB+AHdzcQB+AHp1cQB+AH0AAAADc3EAfgB/cQB+AKBzcQB+AH9xAH4AonEAfgCEc3EAfgBaAHBzcQB+AF91cQB+AD4AAAAAc3EAfgBaAHBzcQB+AF91cQB+AJgAAAACc3EAfgBzcQB+AKpxAH4Ay3NxAH4Ac3EAfgCscQB+AL91cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABSIEFRRN1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdABDL1VzZXJzL2phY2ttdWlyL0Ryb3Bib3gvSG9ub3Vycy9Db2RlL3NjbWIvdGFyZ2V0L3NjYWxhLTIuMTAvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFGIA/eDuZFkgi4jX90pUMZFTOjs1
-/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/rejects.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHC4IVHqAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABSIEFRRN1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+ABp4cHQAQy9Vc2Vycy9qYWNrbXVpci9Ecm9wYm94L0hvbm91cnMvQ29kZS9zY21iL3RhcmdldC9zY2FsYS0yLjEwL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABTuLdxFuBuurF54yZAP3RIslTJU6Q==
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHD7odYZAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAFnNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cBIFlAt0AAZub3RpZnlzcQB+AAykxd6rdAAEd2FpdHNxAH4ADCjD5wN0AA0kYXNJbnN0YW5jZU9mc3EAfgAMd0faNHQAB2FpY0NhbGNzcQB+AAwfRh83dAAGZXF1YWxzc3EAfgAMlv8QmnQABHNDTUJzcQB+AAw85uh0dAAMYXNJbnN0YW5jZU9mc3EAfgAM+n4n0HQADHN5bmNocm9uaXplZHNxAH4ADOLkpBB0AA0kaXNJbnN0YW5jZU9mc3EAfgAM4fUC/HQABG1haW5zcQB+AAzIjhtDdAAJbm90aWZ5QWxsc3EAfgAMtOITfXQADGlzSW5zdGFuY2VPZnNxAH4ADIOtzJh0AAI9PXNxAH4ADEMc+mJ0AAVjbG9uZXNxAH4ADE6lZGp0AAh0b1N0cmluZ3NxAH4ADLoH2E10AAIhPXNxAH4ADFe8Uc90AAhnZXRDbGFzc3NxAH4ADDvrmwl0AAJuZXNxAH4ADBScBBt0AAJlcXNxAH4ADONKLdJ0AAIjI3NxAH4ADONZhaZ0AAhmaW5hbGl6ZXNxAH4ADOCRWRl0AAhoYXNoQ29kZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAJzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AEN4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc8cREyFpnNwkAgABQgAFZmxhZ3N4cABxAH4AGXVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgATeHNidGkuU2FmZUxhenkkSW1wbFACLpOXl0A/AgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cAFzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwcHNxAH4AWgFzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AQ0wACWluaGVyaXRlZHEAfgBDTAAHcGFyZW50c3EAfgBDeHEAfgBhc3EAfgBaAXVxAH4APgAAAAFzcgANeHNidGkuYXBpLkRlZlK+n+J8tDZpAgACTAAKcmV0dXJuVHlwZXQAEEx4c2J0aS9hcGkvVHlwZTtbAA92YWx1ZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9QYXJhbWV0ZXJMaXN0O3hxAH4ARHEAfgBNdXEAfgBOAAAAAHNxAH4AUABxAH4AIXVxAH4AUgAAAABzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgBgdAAEVW5pdHNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4AYHNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAAnNyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AA14cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAFc2NhbGFzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4AfHVyABpbTHhzYnRpLmFwaS5QYXJhbWV0ZXJMaXN0O/XTOh3ys3DuAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJMaXN01sW8HGRJdOMCAAJaAAppc0ltcGxpY2l0WwAKcGFyYW1ldGVyc3QAHFtMeHNidGkvYXBpL01ldGhvZFBhcmFtZXRlcjt4cAB1cgAcW0x4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyO8+4xV2l3bVtAgAAeHAAAAABc3IAGXhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXIfRa4X00mw6gIABFoACmhhc0RlZmF1bHRMAAhtb2RpZmllcnQAHUx4c2J0aS9hcGkvUGFyYW1ldGVyTW9kaWZpZXI7TAAEbmFtZXEAfgANTAADdHBlcQB+AGl4cAB+cgAbeHNidGkuYXBpLlBhcmFtZXRlck1vZGlmaWVyAAAAAAAAAAASAAB4cQB+AFV0AAVQbGFpbnQABGFyZ3NzcgAXeHNidGkuYXBpLlBhcmFtZXRlcml6ZWQWbO5pA8m7fwIAAkwACGJhc2VUeXBlcQB+AHBbAA10eXBlQXJndW1lbnRzdAARW0x4c2J0aS9hcGkvVHlwZTt4cQB+AGBzcQB+AG90AAVBcnJheXEAfgB1dXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAFzcQB+AG90AAZTdHJpbmdzcQB+AHNzcQB+AHZ1cQB+AHkAAAADc3EAfgB7dAAEamF2YXNxAH4Ae3QABGxhbmdxAH4AgHBzcQB+AFoBdXEAfgA+AAAAAHBzcQB+AFoBdXEAfgCUAAAAAnNxAH4Ab3QABk9iamVjdHEAfgCYc3EAfgBvdAADQW55cQB+AHVwcHNxAH4AQHEAfgBNdXEAfgBOAAAAAHNxAH4AUABxAH4AFXVxAH4AUgAAAABxAH4AVnVxAH4AWAAAAABzcQB+AFoBcQB+AGJwc3EAfgBaAXNxAH4AZHNxAH4AWgF1cQB+AD4AAAABc3EAfgBocQB+AE11cQB+AE4AAAAAc3EAfgBQAHEAfgAhdXEAfgBSAAAAAHNxAH4Ab3EAfgByc3EAfgBzc3EAfgB2dXEAfgB5AAAAAnNxAH4Ae3EAfgB+cQB+AIB1cQB+AIEAAAABc3EAfgCDAHVxAH4AhgAAAAFzcQB+AIgAcQB+AIxxAH4AjnNxAH4Aj3NxAH4Ab3EAfgCTcQB+ALZ1cQB+AJQAAAABc3EAfgBvcQB+AJdzcQB+AHNzcQB+AHZ1cQB+AHkAAAADc3EAfgB7cQB+AJxzcQB+AHtxAH4AnnEAfgCAcHNxAH4AWgF1cQB+AD4AAAAAcHNxAH4AWgF1cQB+AJQAAAACc3EAfgBvcQB+AKRxAH4AwnNxAH4Ab3EAfgCmcQB+ALZwcHVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAAAc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFIn6XfgXVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0AEMvVXNlcnMvamFja211aXIvRHJvcGJveC9Ib25vdXJzL0NvZGUvc2NtYi90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUHvlxTKozFYf/0yPqLdcDZ7n69n4=
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHD5Rl5LAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAP3NyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cM30i3N0AAZub3RpZnlzcQB+AAxZDbTZdAAWZ2V0UGF0aHNBbmRSZWZsZWN0aW9uc3NxAH4ADJ2Isc50ABFjaGVja0RhdGFDb250YWluc3NxAH4ADGYYlGV0AAlib3R0b21MZWdzcQB+AAwKFTZMdAAHZ01hdHJpeHNxAH4ADJEBHgl0AAtnVG9tb01hdHJpeHNxAH4ADDj6oQB0AAR3YWl0c3EAfgAMPRYsJXQACHRvcG9SZWZzc3EAfgAMZ8ykxHQAD3BhaXJlZFJheVBhcmFtc3NxAH4ADDY/oYN0AAV2UGx1c3NxAH4ADFQhH4d0AA0kYXNJbnN0YW5jZU9mc3EAfgAMZR/VbnQACnBDYWxjR3JhZFVzcQB+AAyuqorXdAAGZXF1YWxzc3EAfgAMTKALZnQADmNvbWJpbmVJblBhaXJzc3EAfgAMz9xASXQADGFzSW5zdGFuY2VPZnNxAH4ADBmyaO90AA90cmFuc21pdFRocm91Z2hzcQB+AAxC4CJDdAAMc3luY2hyb25pemVkc3EAfgAMkrt5HnQADSRpc0luc3RhbmNlT2ZzcQB+AAwgHa93dAAGU0hEYXRhc3EAfgAM7ZCZOHQABHgkMTlzcQB+AAwUm4o8dAAJcmVzaWR1YWxzc3EAfgAM0b7w3XQABVBjUG1Qc3EAfgAMZX94qnQACnBhdGhMb2FkZXJzcQB+AAywucPedAAUZmlsZVRvTGlzdExpc3REb3VibGVzcQB+AAzvSC0kdAAJbWlkUG9pbnRzc3EAfgAMwKUJjXQABmxsY3lsbXNxAH4ADDuTu9F0ABBmb3J0cmFuSW5Db252ZXJ0c3EAfgAM/H6U3nQACW5vdGlmeUFsbHNxAH4ADOljG8p0AAVoTGlzdHNxAH4ADJTkcTx0AAxpc0luc3RhbmNlT2ZzcQB+AAwq004KdAAKcmVmbGVjdFRvcHNxAH4ADPm+14Z0AAZtaXNmaXRzcQB+AAzWqPsidAAMb1RpbWVzTG9hZGVyc3EAfgAM6IsSN3QABjxpbml0PnNxAH4ADC33jgl0AAJtbHNxAH4ADCFpv1R0AApoYXJtTGlzdGVyc3EAfgAMGB6RtXQAEHNwbGl0QXRMZW5ndGhPbmVzcQB+AAz9wt6WdAACPT1zcQB+AAzJeX40dAAOcGFpcmVkVG9wb1JlZnNzcQB+AAw4+hNCdAAGdG9wTGVnc3EAfgAM8Sa4D3QABWNsb25lc3EAfgAMNbB+JnQACFA0S1BtUGNQc3EAfgAMOaK7bnQAEnN0cmluZ0xpc3RUb0RvdWJsZXNxAH4ADDZ0v0t0AAhyYXlQYXRoc3NxAH4ADJp72bd0AAZwQ2FsY1VzcQB+AAznt9yidAADeWxtc3EAfgAMxZxcjXQABnZNaW51c3NxAH4ADJWDHtF0AAhzcU1pc2ZpdHNxAH4ADNQGDLF0AAVSZXNUVHNxAH4ADErAKKB0AAh0b1N0cmluZ3NxAH4ADJWcZRt0AAIhPXNxAH4ADC0XgIR0AAhnZXRDbGFzc3NxAH4ADDnMJJ50AAR4JDE3c3EAfgAM75KZ+XQAC2dUb3BvTWF0cml4c3EAfgAMn1agYHQAAm5lc3EAfgAMhWCn/nQADXJlZmxlY3RCb3R0b21zcQB+AAxOQIkrdAAPbWlkcG9pbnRzTG9hZGVyc3EAfgAMByFQhHQAAmVxc3EAfgAMHImiNnQACXJheVBhcmFtc3NxAH4ADOhwnyt0AAIjI3NxAH4ADCNprs10AAhmaW5hbGl6ZXNxAH4ADKfQG7V0AAhoYXNoQ29kZXNxAH4ADEejc1l0AAVyQ29yZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAARzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AJV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc8cREyFpnNwkAgABQgAFZmxhZ3N4cAF0ABZzY21iLnNoZGF0YXNldHMuU0hEYXRhdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAIQ2xhc3NEZWZ1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGxQAi6Tl5dAPwIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHAAcHNyACB4c2J0aS5TYWZlTGF6eSQkYW5vbmZ1biRzdHJpY3QkMQAAAAAAAAAAAgABTAAHdmFsdWUkMXEAfgCueHBzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwc3EAfgCtAHBzcQB+ALJzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AlUwACWluaGVyaXRlZHEAfgCVTAAHcGFyZW50c3EAfgCVeHEAfgC2c3EAfgCtAHBzcQB+ALJ1cQB+AJAAAAAAc3EAfgCtAHBzcQB+ALJ1cQB+AJAAAAAAc3EAfgCtAHBzcQB+ALJ1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAnNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADUwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+ALV0AAZPYmplY3RzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+ALVzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAANzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABGphdmFzcQB+ANJ0AARsYW5nc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+ANNzcQB+AMZ0AANBbnlzcQB+AMpzcQB+AM11cQB+ANAAAAACc3EAfgDSdAAFc2NhbGFxAH4A2XNxAH4AknEAfgCfdXEAfgCgAAAAAHNxAH4AogB0ABVzY21iLnNoZGF0YXNldHMuUmVzVFR1cQB+AKUAAAAAcQB+AKl1cQB+AKsAAAAAc3EAfgCtAHBzcQB+ALJxAH4At3NxAH4ArQBwc3EAfgCyc3EAfgC6c3EAfgCtAHBzcQB+ALJ1cQB+AJAAAAAAc3EAfgCtAHBzcQB+ALJ1cQB+AJAAAAAAc3EAfgCtAHBzcQB+ALJ1cQB+AMQAAAADc3EAfgDGdAAGU0hEYXRhc3EAfgDKc3EAfgDNdXEAfgDQAAAAA3NxAH4A0nQABHNjbWJzcQB+ANJ0AApzaGRhdGFzZXRzcQB+ANlzcQB+AMZxAH4AyXNxAH4AynNxAH4AzXVxAH4A0AAAAANzcQB+ANJxAH4A1XNxAH4A0nEAfgDXcQB+ANlzcQB+AMZxAH4A23NxAH4AynNxAH4AzXVxAH4A0AAAAAJzcQB+ANJxAH4A4HEAfgDZc3EAfgCScQB+AJ91cQB+AKAAAAAAc3EAfgCiAHQAFXNjbWIuc2hkYXRhc2V0cy5QY1BtUHVxAH4ApQAAAABxAH4AqXVxAH4AqwAAAABzcQB+AK0AcHNxAH4AsnEAfgC3c3EAfgCtAHBzcQB+ALJzcQB+ALpzcQB+AK0AcHNxAH4AsnVxAH4AkAAAAABzcQB+AK0AcHNxAH4AsnVxAH4AkAAAAABzcQB+AK0AcHNxAH4AsnVxAH4AxAAAAANzcQB+AMZ0AAZTSERhdGFzcQB+AMpzcQB+AM11cQB+ANAAAAADc3EAfgDSdAAEc2NtYnNxAH4A0nQACnNoZGF0YXNldHNxAH4A2XNxAH4AxnEAfgDJc3EAfgDKc3EAfgDNdXEAfgDQAAAAA3NxAH4A0nEAfgDVc3EAfgDScQB+ANdxAH4A2XNxAH4AxnEAfgDbc3EAfgDKc3EAfgDNdXEAfgDQAAAAAnNxAH4A0nEAfgDgcQB+ANlzcQB+AJJxAH4An3VxAH4AoAAAAABzcQB+AKIAdAAYc2NtYi5zaGRhdGFzZXRzLlA0S1BtUGNQdXEAfgClAAAAAHEAfgCpdXEAfgCrAAAAAHNxAH4ArQBwc3EAfgCycQB+ALdzcQB+AK0AcHNxAH4AsnNxAH4AunNxAH4ArQBwc3EAfgCydXEAfgCQAAAAAHNxAH4ArQBwc3EAfgCydXEAfgCQAAAAAHNxAH4ArQBwc3EAfgCydXEAfgDEAAAAA3NxAH4AxnQABlNIRGF0YXNxAH4AynNxAH4AzXVxAH4A0AAAAANzcQB+ANJ0AARzY21ic3EAfgDSdAAKc2hkYXRhc2V0c3EAfgDZc3EAfgDGcQB+AMlzcQB+AMpzcQB+AM11cQB+ANAAAAADc3EAfgDScQB+ANVzcQB+ANJxAH4A13EAfgDZc3EAfgDGcQB+ANtzcQB+AMpzcQB+AM11cQB+ANAAAAACc3EAfgDScQB+AOBxAH4A2XVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAACc3IAEXhzYnRpLmFwaS5QYWNrYWdlflmP9q7OOVgCAAFMAARuYW1lcQB+AA14cHQAD3NjbWIuc2hkYXRhc2V0c3NxAH4BW3QABHNjbWJzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAUiBBUUTdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAQy9Vc2Vycy9qYWNrbXVpci9Ecm9wYm94L0hvbm91cnMvQ29kZS9zY21iL3RhcmdldC9zY2FsYS0yLjEwL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABRr+dVVOHOR8gbgSKH9XdVuO2qPrw==
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHB4JTktAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAQnNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cJNDZhl0AAZub3RpZnlzcQB+AAznKr91dAAWZ2V0UGF0aHNBbmRSZWZsZWN0aW9uc3NxAH4ADBZFUMx0ABFjaGVja0RhdGFDb250YWluc3NxAH4ADIiiLZV0AAlib3R0b21MZWdzcQB+AAzg9muFdAAHZ01hdHJpeHNxAH4ADPOiARF0AAtnVG9tb01hdHJpeHNxAH4ADG0Sj2x0AAR3YWl0c3EAfgAMQ/lmUHQACHRvcG9SZWZzc3EAfgAMLUKPUnQAD3BhaXJlZFJheVBhcmFtc3NxAH4ADGw1tV50AAV2UGx1c3NxAH4ADKYNbzl0AA0kYXNJbnN0YW5jZU9mc3EAfgAMWH0wYnQACnBDYWxjR3JhZFVzcQB+AAzPLaUJdAAEeCQyMXNxAH4ADGboMJV0AAZlcXVhbHNzcQB+AAwKFviHdAAOY29tYmluZUluUGFpcnNzcQB+AAzvmJQIdAAMYXNJbnN0YW5jZU9mc3EAfgAMdJwciHQAD3RyYW5zbWl0VGhyb3VnaHNxAH4ADKdLh9x0AAxzeW5jaHJvbml6ZWRzcQB+AAw0n7lVdAALUEtQYWJtUEtQYmNzcQB+AAxiBrngdAANJGlzSW5zdGFuY2VPZnNxAH4ADCAdr3d0AAZTSERhdGFzcQB+AAztkJk4dAAEeCQxOXNxAH4ADCKceZ10AAlyZXNpZHVhbHNzcQB+AAzRvvDddAAFUGNQbVBzcQB+AAynfltldAAKcGF0aExvYWRlcnNxAH4ADII+jwN0ABRmaWxlVG9MaXN0TGlzdERvdWJsZXNxAH4ADO9ILSR0AAltaWRQb2ludHNzcQB+AAyzaqiGdAAGbGxjeWxtc3EAfgAMo6WpZ3QAEGZvcnRyYW5JbkNvbnZlcnRzcQB+AAyh/8nVdAAJbm90aWZ5QWxsc3EAfgAMvXjBGnQABWhMaXN0c3EAfgAMGcyUCXQADGlzSW5zdGFuY2VPZnNxAH4ADPj0L+Z0AApyZWZsZWN0VG9wc3EAfgAMpP1SHXQABm1pc2ZpdHNxAH4ADEiaujt0AAxvVGltZXNMb2FkZXJzcQB+AAzYua+rdAAGPGluaXQ+c3EAfgAMMJmeVHQAAm1sc3EAfgAMXmswA3QACmhhcm1MaXN0ZXJzcQB+AAz7VcCtdAAQc3BsaXRBdExlbmd0aE9uZXNxAH4ADFYp8Ud0AAI9PXNxAH4ADI+flv90AA5wYWlyZWRUb3BvUmVmc3NxAH4ADGZl/1x0AAZ0b3BMZWdzcQB+AAwNVFNGdAAFY2xvbmVzcQB+AAyS9XzOdAAGcGFydFZSc3EAfgAMNbB+JnQACFA0S1BtUGNQc3EAfgAMuQ2Gr3QAEnN0cmluZ0xpc3RUb0RvdWJsZXNxAH4ADNvGAKp0AAhyYXlQYXRoc3NxAH4ADOJ9vPJ0AAZwQ2FsY1VzcQB+AAwscZnDdAADeWxtc3EAfgAMcSYwPXQABnZNaW51c3NxAH4ADA1LItN0AAhzcU1pc2ZpdHNxAH4ADNQGDLF0AAVSZXNUVHNxAH4ADGcwOx50AAh0b1N0cmluZ3NxAH4ADEGppaB0AAIhPXNxAH4ADOIACQd0AAhnZXRDbGFzc3NxAH4ADDnMJJ50AAR4JDE3c3EAfgAM6SP2WXQAC2dUb3BvTWF0cml4c3EAfgAMh+mNK3QAAm5lc3EAfgAMso+4wHQADXJlZmxlY3RCb3R0b21zcQB+AAxOQIkrdAAPbWlkcG9pbnRzTG9hZGVyc3EAfgAMnD8cbnQAAmVxc3EAfgAMOlqxvnQACXJheVBhcmFtc3NxAH4ADL1q69x0AAIjI3NxAH4ADJFqoYF0AAhmaW5hbGl6ZXNxAH4ADNWb+9x0AAhoYXNoQ29kZXNxAH4ADGGcLTN0AAVyQ29yZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAVzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AJt4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc8cREyFpnNwkAgABQgAFZmxhZ3N4cAF0ABZzY21iLnNoZGF0YXNldHMuU0hEYXRhdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAIQ2xhc3NEZWZ1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGxQAi6Tl5dAPwIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHABc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHBzcQB+ALMBc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AJtMAAlpbmhlcml0ZWRxAH4Am0wAB3BhcmVudHNxAH4Am3hxAH4AunNxAH4AswF1cQB+AJYAAAAAcHNxAH4AswF1cQB+AJYAAAAAcHNxAH4AswF1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAnNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADUwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+ALl0AAZPYmplY3RzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+ALlzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAANzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABGphdmFzcQB+ANJ0AARsYW5nc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+ANNzcQB+AMZ0AANBbnlzcQB+AMpzcQB+AM11cQB+ANAAAAACc3EAfgDSdAAFc2NhbGFxAH4A2XBwc3EAfgCYcQB+AKV1cQB+AKYAAAAAc3EAfgCoAHQAFXNjbWIuc2hkYXRhc2V0cy5SZXNUVHVxAH4AqwAAAABxAH4Ar3VxAH4AsQAAAABzcQB+ALMBcQB+ALtwc3EAfgCzAXNxAH4AvXNxAH4AswF1cQB+AJYAAAAAcHNxAH4AswF1cQB+AJYAAAAAcHNxAH4AswF1cQB+AMQAAAADc3EAfgDGdAAGU0hEYXRhc3EAfgDKc3EAfgDNdXEAfgDQAAAAA3NxAH4A0nQABHNjbWJzcQB+ANJ0AApzaGRhdGFzZXRzcQB+ANlzcQB+AMZxAH4AyXNxAH4AynNxAH4AzXVxAH4A0AAAAANzcQB+ANJxAH4A1XNxAH4A0nEAfgDXcQB+ANlzcQB+AMZxAH4A23NxAH4AynNxAH4AzXVxAH4A0AAAAAJzcQB+ANJxAH4A4HEAfgDZcHBzcQB+AJhxAH4ApXVxAH4ApgAAAABzcQB+AKgAdAAVc2NtYi5zaGRhdGFzZXRzLlBjUG1QdXEAfgCrAAAAAHEAfgCvdXEAfgCxAAAAAHNxAH4AswFxAH4Au3BzcQB+ALMBc3EAfgC9c3EAfgCzAXVxAH4AlgAAAABwc3EAfgCzAXVxAH4AlgAAAABwc3EAfgCzAXVxAH4AxAAAAANzcQB+AMZ0AAZTSERhdGFzcQB+AMpzcQB+AM11cQB+ANAAAAADc3EAfgDSdAAEc2NtYnNxAH4A0nQACnNoZGF0YXNldHNxAH4A2XNxAH4AxnEAfgDJc3EAfgDKc3EAfgDNdXEAfgDQAAAAA3NxAH4A0nEAfgDVc3EAfgDScQB+ANdxAH4A2XNxAH4AxnEAfgDbc3EAfgDKc3EAfgDNdXEAfgDQAAAAAnNxAH4A0nEAfgDgcQB+ANlwcHNxAH4AmHEAfgCldXEAfgCmAAAAAHNxAH4AqAB0ABhzY21iLnNoZGF0YXNldHMuUDRLUG1QY1B1cQB+AKsAAAAAcQB+AK91cQB+ALEAAAAAc3EAfgCzAXEAfgC7cHNxAH4AswFzcQB+AL1zcQB+ALMBdXEAfgCWAAAAAHBzcQB+ALMBdXEAfgCWAAAAAHBzcQB+ALMBdXEAfgDEAAAAA3NxAH4AxnQABlNIRGF0YXNxAH4AynNxAH4AzXVxAH4A0AAAAANzcQB+ANJ0AARzY21ic3EAfgDSdAAKc2hkYXRhc2V0c3EAfgDZc3EAfgDGcQB+AMlzcQB+AMpzcQB+AM11cQB+ANAAAAADc3EAfgDScQB+ANVzcQB+ANJxAH4A13EAfgDZc3EAfgDGcQB+ANtzcQB+AMpzcQB+AM11cQB+ANAAAAACc3EAfgDScQB+AOBxAH4A2XBwc3EAfgCYcQB+AKV1cQB+AKYAAAAAc3EAfgCoAHQAG3NjbWIuc2hkYXRhc2V0cy5QS1BhYm1QS1BiY3VxAH4AqwAAAABxAH4Ar3VxAH4AsQAAAABzcQB+ALMBcQB+ALtwc3EAfgCzAXNxAH4AvXNxAH4AswF1cQB+AJYAAAAAcHNxAH4AswF1cQB+AJYAAAAAcHNxAH4AswF1cQB+AMQAAAADc3EAfgDGdAAGU0hEYXRhc3EAfgDKc3EAfgDNdXEAfgDQAAAAA3NxAH4A0nQABHNjbWJzcQB+ANJ0AApzaGRhdGFzZXRzcQB+ANlzcQB+AMZxAH4AyXNxAH4AynNxAH4AzXVxAH4A0AAAAANzcQB+ANJxAH4A1XNxAH4A0nEAfgDXcQB+ANlzcQB+AMZxAH4A23NxAH4AynNxAH4AzXVxAH4A0AAAAAJzcQB+ANJxAH4A4HEAfgDZcHB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAnNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0AA9zY21iLnNoZGF0YXNldHNzcQB+AW90AARzY21ic3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFIn6XfgXVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0AEMvVXNlcnMvamFja211aXIvRHJvcGJveC9Ib25vdXJzL0NvZGUvc2NtYi90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUaalgqVoTtucc7XDThGnT50JWA70=
 external apis:
 0 items
 source infos:
-5 items
+4 items
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/cmbhmc.scala -> 
 AAAAAAAAAAA=
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/hmc.scala -> 
 AAAAAAAAAAA=
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/main.scala -> 
-AAAAAAAAAAA=
-/Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/rejects.scala -> 
 AAAAAAAAAAA=
 /Users/jackmuir/Dropbox/Honours/Code/scmb/src/main/scala/shdatasets.scala -> 
 AAAAAAAAAAA=
 compilations:
-18 items
+21 items
 00 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABSGFifkZ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQy9Vc2Vycy9qYWNrbXVpci9Ecm9wYm94L0hvbm91cnMvQ29kZS9zY21iL3RhcmdldC9zY2FsYS0yLjEwL2NsYXNzZXN0AAEv
 01 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABSGFkK9x1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQy9Vc2Vycy9qYWNrbXVpci9Ecm9wYm94L0hvbm91cnMvQ29kZS9zY21iL3RhcmdldC9zY2FsYS0yLjEwL2NsYXNzZXN0AAEv
 02 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABSGFmGO11cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQy9Vc2Vycy9qYWNrbXVpci9Ecm9wYm94L0hvbm91cnMvQ29kZS9zY21iL3RhcmdldC9zY2FsYS0yLjEwL2NsYXNzZXN0AAEv
@@ -836,3 +917,6 @@ compilations:
 15 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABSH3W/xx1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQy9Vc2Vycy9qYWNrbXVpci9Ecm9wYm94L0hvbm91cnMvQ29kZS9zY21iL3RhcmdldC9zY2FsYS0yLjEwL2NsYXNzZXN0AAEv
 16 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABSICbjLJ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAPi9ob21lL2phY2svRHJvcGJveC9Ib25vdXJzL0NvZGUvc2NtYi90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABLw==
 17 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABSIEFRRN1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQy9Vc2Vycy9qYWNrbXVpci9Ecm9wYm94L0hvbm91cnMvQ29kZS9zY21iL3RhcmdldC9zY2FsYS0yLjEwL2NsYXNzZXN0AAEv
+18 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABSJv8LQx1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQy9Vc2Vycy9qYWNrbXVpci9Ecm9wYm94L0hvbm91cnMvQ29kZS9zY21iL3RhcmdldC9zY2FsYS0yLjEwL2NsYXNzZXN0AAEv
+19 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABSJzXSs91cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQy9Vc2Vycy9qYWNrbXVpci9Ecm9wYm94L0hvbm91cnMvQ29kZS9zY21iL3RhcmdldC9zY2FsYS0yLjEwL2NsYXNzZXN0AAEv
+20 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABSJ+l34F1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQy9Vc2Vycy9qYWNrbXVpci9Ecm9wYm94L0hvbm91cnMvQ29kZS9zY21iL3RhcmdldC9zY2FsYS0yLjEwL2NsYXNzZXN0AAEv

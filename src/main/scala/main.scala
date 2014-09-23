@@ -98,27 +98,45 @@ object sCMB {
     }
     val inxml = XML.loadFile(args(6))
     val datamaps = xmlToListMaps(inxml)
-    val initialGuess =  List((DenseVector.zeros[Double](qlen * 2), (for (set <- datamaps) yield 1.0).toList, Double.PositiveInfinity))
+    val initialGuess =  List((DenseVector.zeros[Double](qlen * 2), (for (set <- datamaps) yield 1.0).toList, Double.PositiveInfinity, (for (set <- datamaps) yield 0.0).toList))
     val runner = new cmbHMC(l, ep, maxdeg, datamaps)
     val results = runner.hmcRunner(maxIt, report, 1, 0, initialGuess)
 
-    def printParametersAndNoise(f1: File, f2: File, f3: File) {
+    def printParametersAndNoise(f1: File, f2: File, f3: File, f4: File) {
       val p1 = new PrintWriter(f1)
       val p2 = new PrintWriter(f2)
       val p3 = new PrintWriter(f3)
+      val p4 = new PrintWriter(f4)
       for (res <- results.dropRight(burn)) {
         for (tomo <- res._1.apply(0 to qlen - 1)) p1.print(s"$tomo ")
         ////////!!!!!!!!////////!!!!!!!!////////!!!!!!!!////////!!!!!!!!////////!!!!!!!!
         for (topo <- res._1.apply(qlen to 2 * qlen - 1)) p2.print(s"${topo * 1000.0} ") // see shdatasets for 1000
         for (noise <- res._2) p3.print(s"$noise ")
-        p1.print("\n"); p2.print("\n"); p3.print("\n")
+        for (vr <- res._4) p4.print(s"$vr ")
+        p1.print("\n"); p2.print("\n"); p3.print("\n"); p4.print("\n")
       }
-      p1.close(); p2.close(); p3.close()
+      p1.close(); p2.close(); p3.close(); p4.close()
+    }
+
+    def printAvMisfits() {
+      val p = for (cmbSet <- runner.cmbSets) yield new PrintWriter(new File(s"av_misfit_residuals_set_${runner.cmbSets.indexOf(cmbSet)}.dat"))
+      val allMisfits = for (res <- results.dropRight(burn)) yield runner.misfits(res._1)
+      val arrangedMisfits = allMisfits.transpose
+      val noResults = results.dropRight(burn).length.toDouble
+      val avResiduals = for (resList <- arrangedMisfits) yield resList.reduceLeft(_ + _) / noResults
+      for (printer <- p) {
+        for (residual <- avResiduals(p.indexOf(printer))) {
+          printer.print(s"$residual \n")
+        }
+        printer.close()
+      }
     }
 
     printParametersAndNoise(new File(s"tomo_parameters_l_$maxdeg.dat"),
                             new File(s"topo_parameters_l_$maxdeg.dat"),
-                            new File(s"noise_parameters_l_$maxdeg.dat"))
+                            new File(s"noise_parameters_l_$maxdeg.dat"),
+                            new File(s"variance_reduction_l_$maxdeg.dat"))
+    printAvMisfits()
   }
 }
 
@@ -135,7 +153,7 @@ object aicCalc {
     val inxml = XML.loadFile(args(1))
     val datamaps = xmlToListMaps(inxml)
     val qlen = (l + 1) * (l + 1)
-    val initialGuess =  List((DenseVector.zeros[Double](qlen * 2), (for (set <- datamaps) yield 1.0).toList, Double.PositiveInfinity))
+    val initialGuess =  List((DenseVector.zeros[Double](qlen * 2), (for (set <- datamaps) yield 1.0).toList, Double.PositiveInfinity, 0.0, (for (set <- datamaps) yield 0.0).toList))
     val runner = new cmbHMC(1, 1.0, l, datamaps) // just dummy l, epsilon: we don't use them
     val mll = new DiffFunction[DenseVector[Double]] {
       def calculate(x: DenseVector[Double]) = {

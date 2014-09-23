@@ -104,6 +104,12 @@ abstract class SHData(maxl: Int) {
     mis dot mis
   }
 
+  def partVR(g: DenseMatrix[Double], q: DenseVector[Double], d: DenseVector[Double]): Double = {
+    val phi = sqMisfit(g,q,d)
+    val obsSq = d dot d
+    phi / obsSq
+  }
+
   def pCalcU(g: DenseMatrix[Double], q: DenseVector[Double], d: DenseVector[Double], sig: Double): Double = {
     val phi = sqMisfit(g,q,d)
     phi / (2.0 * sig * sig)
@@ -248,7 +254,6 @@ class P4KPmPcP(maxl: Int, dataM: Map[String,String]) extends SHData(maxl) {
       llcylm(l, m, p4kptopoLat(n + 3), p4kptopoLon(n + 3)) * bottomLeg(p4kprayParam) +
       llcylm(l, m, p4kptopoLat(len - 1), p4kptopoLon(len - 1)) * topLeg(p4kprayParam) -
       llcylm(l, m, pcptopoLat, pcptopoLon) * reflectTop(pcprayParam)
-      }
     }
     DenseMatrix.tabulate(pairedTopoRefs.length, hList.length){case (i, j) => gTopoMatElement(i, j)}
   }
@@ -273,13 +278,12 @@ class PKPabmPKPbc(maxl: Int, dataM: Map[String,String]) extends SHData(maxl) {
       val pkpabrayParam = pairedRayParams(selectedTopo)(0)
       val pkpbctopoLat = for (topo <- pairedTopoRefs(selectedTopo)(1)) yield topo(3)
       val pkpbctopoLon = for (topo <- pairedTopoRefs(selectedTopo)(1)) yield topo(4)
-      val pcprayParam = pairedRayParams(selectedTopo)(1)
-      llcylm(l, m, pkpabtopoLat(0), pkpabtopoLon(0)) * transmitThrough(pkpabprayParam) +
-      llcylm(l, m, pkpabtopoLat(1), pkpabtopoLon(1)) * transmitThrough(pkpabprayParam) -
-      llcylm(l, m, pkpbctopoLat(0), pkpbctopoLon(0)) * transmitThrough(pkpabprayParam) -
-      llcylm(l, m, pkpbctopoLat(1), pkpbctopoLon(1)) * transmitThrough(pkpabprayParam)
+      val pkpbcrayParam = pairedRayParams(selectedTopo)(1)
+      llcylm(l, m, pkpabtopoLat(0), pkpabtopoLon(0)) * transmitThrough(pkpabrayParam) +
+      llcylm(l, m, pkpabtopoLat(1), pkpabtopoLon(1)) * transmitThrough(pkpabrayParam) -
+      llcylm(l, m, pkpbctopoLat(0), pkpbctopoLon(0)) * transmitThrough(pkpbcrayParam) -
+      llcylm(l, m, pkpbctopoLat(1), pkpbctopoLon(1)) * transmitThrough(pkpbcrayParam)
       }
-    }
     DenseMatrix.tabulate(pairedTopoRefs.length, hList.length){case (i, j) => gTopoMatElement(i, j)}
   }
   ////////!!!!!!!!////////!!!!!!!!////////!!!!!!!!////////!!!!!!!!////////!!!!!!!!

@@ -7,6 +7,8 @@ from ylm import Ylmr as ylmr
 topo = np.loadtxt('topo_parameters_l_4.dat')
 
 tomo = np.loadtxt('tomo_parameters_l_4.dat')
+
+
 def slashandburn(data,burn,thin):
     return data[burn::thin]
 

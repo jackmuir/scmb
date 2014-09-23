@@ -1,5 +1,6 @@
-[0m[[0minfo[0m] [0mRunning aicCalc 4 datasetssyntheticharmonics.xml 0.342309 0.228912[0m
+[0m[[0minfo[0m] [0mRunning sCMB 4 500 0.000125 100000 10000 10 datasetssyntheticharmonics.xml[0m
 [0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread run-main-1 to terminate.[0m
 [0m[[0mdebug[0m] [0m  Classpath:[0m
 [0m[[0mdebug[0m] [0m	/Users/jackmuir/Dropbox/Honours/Code/scmb/target/scala-2.10/classes[0m
 [0m[[0mdebug[0m] [0m	/Users/jackmuir/.sbt/boot/scala-2.10.4/lib/scala-library.jar[0m
@@ -33,8 +34,7 @@
 [0m[[0mdebug[0m] [0m	/Users/jackmuir/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-linux-armhf/jars/netlib-native_system-linux-armhf-1.1-natives.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/jackmuir/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-win-x86_64/jars/netlib-native_system-win-x86_64-1.1-natives.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/jackmuir/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-win-i686/jars/netlib-native_system-win-i686-1.1-natives.jar[0m
-[0m[[0mdebug[0m] [0mWaiting for thread run-main-4 to terminate.[0m
-[0m[[0mdebug[0m] [0m	Thread run-main-4 exited.[0m
+[0m[[0mdebug[0m] [0m	Thread run-main-1 exited.[0m
 [0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m
 [0m[[0mdebug[0m] [0mSandboxed run complete..[0m
 [0m[[0mdebug[0m] [0mExited with code 0[0m

@@ -29,7 +29,7 @@ import scmb.shdatasets._
 
 import scmb.hmc._
 
-import math.{log, Pi}
+import math.{log, Pi, sqrt}
 
 class cmbHMC(ll: Int, ee: Double, maxl: Int, dataSets: List[Map[String, String]]) extends HMC(ll, ee) {
   val cmbSets = for (dataSet <- dataSets) yield {
@@ -44,6 +44,15 @@ class cmbHMC(ll: Int, ee: Double, maxl: Int, dataSets: List[Map[String, String]]
   def calcU(q: Position, sigs: HierarchicalList): Double = {
     val pSums = for (cmbSet <- cmbSets) yield cmbSet.pCalcU(cmbSet.gMatrix, q, cmbSet.residuals, sigs(cmbSets.indexOf(cmbSet)))
     pSums.reduceLeft(_ + _)
+    }
+
+  def misfits(q: Position): List[DenseVector[Double]] = {
+    for (cmbSet <- cmbSets) yield cmbSet.misfit(cmbSet.gMatrix, q, cmbSet.residuals)
+  }
+
+  def varianceReduction(q: Position): List[Double] = {
+    val pSums = for (cmbSet <- cmbSets) yield cmbSet.partVR(cmbSet.gMatrix, q, cmbSet.residuals)
+    for (pSum <- pSums) yield 100.0*(1.0-sqrt(pSum))
     }
 
   def calcGradU(q: Position, sigs: HierarchicalList): DenseVector[Double] = {

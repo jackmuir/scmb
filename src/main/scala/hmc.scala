@@ -50,6 +50,10 @@ abstract class HMC(baseSteps: Int, baseEpsilon: Double) {
 
   def calcGradU(q: Position, hierarchicalVar: HierarchicalList): DenseVector[Double]
 
+  def misfits(q: Position): List[DenseVector[Double]]
+
+  def varianceReduction(q: Position): List[Double]
+
   def mLogLike(q: Position, heirarchicalVar: HierarchicalList): Double
 
   def mLogLikeGrad(q: Position, heirarchicalVar: HierarchicalList): DenseVector[Double]
@@ -90,25 +94,27 @@ abstract class HMC(baseSteps: Int, baseEpsilon: Double) {
   //Pass initial values to rl
   @tailrec
   final def hmcRunner(maxIt: Int, report: Int, iter: Int, acc: Int,
-    rl: List[(Position, HierarchicalList, Double)]):
-    List[(Position, HierarchicalList, Double)] = iter match {
+    rl: List[(Position, HierarchicalList, Double, List[Double])]):
+    List[(Position, HierarchicalList, Double, List[Double])] = iter match {
     case `maxIt` => {
       val (q, acceptedNew) = hmcUpdate(rl(0)._1, rl(0)._2)
       val hierarchicalVar = gibbsUpdate(q)
       val mLL = mLogLike(q, hierarchicalVar)
-      (q, hierarchicalVar, mLL) :: rl
+      val vR = varianceReduction(q)
+      (q, hierarchicalVar, mLL, vR) :: rl
     }
     case _ => {
       val (q, acceptedNew) = hmcUpdate(rl(0)._1, rl(0)._2)
       val hierarchicalVar = gibbsUpdate(q)
       val currU = calcU(q, hierarchicalVar)
       val mLL = mLogLike(q, hierarchicalVar)
+      val vR = varianceReduction(q)
       if (iter % report == 0) {
         println(s"\nIteration $iter of $maxIt")
         println(s"U: $currU")
         println(s"Acceptance: ${100.0 * (acc + acceptedNew).toDouble / iter.toDouble}")
       }
-      hmcRunner(maxIt, report, iter + 1, acc + acceptedNew, (q, hierarchicalVar, mLL) :: rl)
+      hmcRunner(maxIt, report, iter + 1, acc + acceptedNew, (q, hierarchicalVar, mLL, vR) :: rl)
     }
   }
 }

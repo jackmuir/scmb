@@ -11,4 +11,10 @@
       <raypaths>P4KP_PcP_Tanaka_Tomo.dat</raypaths>
       <topoin>P4KP_PcP_Tanaka_Topo.dat</topoin>
     </set>
+    <set>
+      <type>PKPab-PKPbc</type>
+      <otimes>synth_pkp_ylm.dat</otimes>
+      <raypaths>ray_path_H_M_PKPab-bc_300km_Boschi.dat</raypaths>
+      <topoin>topo_in_H_M_PKPab-bc_300km_Boschi.dat</topoin>
+    </set>
 </datasets>

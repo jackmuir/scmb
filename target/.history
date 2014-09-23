@@ -260,3 +260,17 @@ run 6 1000 0.000075 100000 10000 1000 datasetssyntheticharmonics.xml
 run 6 1000 0.00007 100000 10000 1000 datasetssyntheticharmonics.xml
 run 4 datasetssyntheticharmonics.xml 0.374984 0.269083
 run 4 datasetssyntheticharmonics.xml 0.342309 0.228912
+compile
+run 4 1000 0.00007 100000 10000 1000 datasetssyntheticharmonics.xml
+run 4 1000 0.00008 100000 10000 1000 datasetssyntheticharmonics.xml
+run 4 1000 0.0001 100000 10000 1000 datasetssyntheticharmonics.xml
+run 4 500 0.0002 100000 10000 10 datasetssyntheticharmonics.xml
+run 4 500 0.00025 100000 10000 10 datasetssyntheticharmonics.xml
+run 4 500 0.00015 100000 10000 10 datasetssyntheticharmonics.xml
+run 4 500 0.00012 100000 10000 10 datasetssyntheticharmonics.xml
+run 4 500 0.00013 100000 10000 10 datasetssyntheticharmonics.xml
+run 4 500 0.000125 100000 10000 10 datasetssyntheticharmonics.xml
+exit
+run 4 500 0.000125 100000 10000 10 datasetssyntheticharmonics.xml
+:q
+exit
