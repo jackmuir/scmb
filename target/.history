@@ -277,3 +277,49 @@ exit
 clean
 exit
 clean
+exit
+run 4 500 0.000125 100000 10000 10 datasetssyntheticharmonics.xml
+run 4 500 0.00013 100000 10000 10 datasetssyntheticharmonics.xml
+run 4 500 0.00014 100000 10000 10 datasetssyntheticharmonics.xml
+run 4 500 0.000175 100000 10000 10 datasetssyntheticharmonics.xml
+run 4 500 0.00025 100000 10000 10 datasetssyntheticharmonics.xml
+run 4 500 0.001 100000 10000 10 datasetssyntheticharmonics.xml
+run 4 500 0.001 1004000 10000 10 datasetssyntheticharmonics.xml
+run 4 500 0.0005 100000 10000 10 datasetssyntheticharmonics.xml
+run 4 500 0.0006 100000 10000 10 datasetssyntheticharmonics.xml
+run 4 500 0.00075 100000 10000 10 datasetssyntheticharmonics.xml
+run 4 500 0.0007 100000 10000 10 datasetssyntheticharmonics.xml
+run 4 500 0.00065 100000 10000 10 datasetssyntheticharmonics.xml
+compile
+run 1 500 0.001 100000 10000 10 datasetsnomatlecorr.xml
+run 1 500 0.001 100000 10000 10 datasetsnomantlecorr.xml
+run 1 500 0.00075 100000 10000 10 datasetsnomantlecorr.xml
+run 1 500 0.0005 100000 10000 10 datasetsnomantlecorr.xml
+run 1 500 0.00025 100000 10000 10 datasetsnomantlecorr.xml
+run 1 500 0.0001 100000 10000 10 datasetsnomantlecorr.xml
+run 2 500 0.0001 100000 10000 10 datasetsnomantlecorr.xml
+run 3 500 0.00008 100000 10000 10 datasetsnomantlecorr.xml
+run 4 500 0.000075 100000 10000 10 datasetsnomantlecorr.xml
+run 5 500 0.000075 100000 10000 10 datasetsnomantlecorr.xml
+run 6 500 0.00007 100000 10000 10 datasetsnomantlecorr.xml
+run 7 500 0.000065 100000 10000 10 datasetsnomantlecorr.xml
+run 8 500 0.00006 100000 10000 10 datasetsnomantlecorr.xml
+run 9 500 0.000055 100000 10000 10 datasetsnomantlecorr.xml
+run 10 500 0.00005 100000 10000 10 datasetsnomantlecorr.xml
+run 11 500 0.00005 100000 10000 10 datasetsnomantlecorr.xml
+compile
+run 4 datasetsnomantlecorr.xml 0.669842 1.15008 1.34036
+run 1 datasetsnomantlecorr.xml 0.669842 1.15008 1.34036
+run 2 datasetsnomantlecorr.xml 0.662915 1.06404 0.733056
+run 3 datasetsnomantlecorr.xml 0.65117 1.06447 0.706223
+run 3 datasetsnomantlecorr.xml 0.653333 0.929657 0.695377
+run 4 datasetsnomantlecorr.xml 0.653333 0.929657 0.695377
+run 5 datasetsnomantlecorr.xml 0.653232 0.887025 0.675898
+run 6 datasetsnomantlecorr.xml 0.650933 0.840396 0.669114
+run 7 datasetsnomantlecorr.xml 0.632157 0.70242 0.668165
+run 8 datasetsnomantlecorr.xml 0.626946 0.652788 0.639798
+run 9 datasetsnomantlecorr.xml 0.628751 0.628015 0.588276
+run 10 datasetsnomantlecorr.xml 0.617577 0.611353 0.561341
+run 11 datasetsnomantlecorr.xml 0.596991 0.572468 0.57703
+clean
+exit

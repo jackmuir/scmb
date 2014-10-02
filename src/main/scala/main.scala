@@ -119,7 +119,7 @@ object sCMB {
     }
 
     def printAvMisfits() {
-      val p = for (cmbSet <- runner.cmbSets) yield new PrintWriter(new File(s"av_misfit_residuals_set_${runner.cmbSets.indexOf(cmbSet)}.dat"))
+      val p = for (cmbSet <- runner.cmbSets) yield new PrintWriter(new File(s"av_misfit_residuals_l_${maxdeg}_set_${runner.cmbSets.indexOf(cmbSet)}.dat"))
       val allMisfits = for (res <- results.dropRight(burn)) yield runner.misfits(res._1)
       val arrangedMisfits = allMisfits.transpose
       val noResults = results.dropRight(burn).length.toDouble
@@ -166,7 +166,7 @@ object aicCalc {
     val k = runner.cmbSets(0).gMatrix.cols + runner.cmbSets.length
     val n = (for (set <- runner.cmbSets) yield set.gMatrix.rows).reduceLeft(_ + _)
     val initial = DenseVector.zeros[Double](k)
-    initial(0 to runner.cmbSets.length - 1) := DenseVector(args(2).toDouble,args(3).toDouble)
+    initial(0 to runner.cmbSets.length - 1) := DenseVector(for (sigma <- args.drop(2)) yield sigma.toDouble)
     val minimized = lbfgs.minimize(mll, initial)
     val minMLogLike = mll(minimized)
     println(s"Sigma at min = ${minimized(0 to runner.cmbSets.length -1)}")

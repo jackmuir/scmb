@@ -1,8 +1,0 @@
-<datasets>
-    <set>
-      <type>P4KP-PcP</type>
-      <otimes>P4KP_PcP_Tanaka_otimes.dat</otimes>
-      <raypaths>P4KP_PcP_Tanaka_Tomo.dat</raypaths>
-      <topoin>P4KP_PcP_Tanaka_Topo.dat</topoin>
-    </set>
-</datasets>

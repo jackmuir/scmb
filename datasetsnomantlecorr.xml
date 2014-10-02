@@ -1,19 +1,19 @@
 <datasets>
     <set>
       <type>PcP-P</type>
-      <otimes>synth_pcp_ylm.dat</otimes>
+      <otimes>PcP_P_residuals_no_mantle_corr.dat</otimes>
       <raypaths>ray_path_H_M_C_PcP_300km_Boschi.dat</raypaths>
       <topoin>topo_in_H_M_C_PcP_Boschi.dat</topoin>
     </set>
     <set>
       <type>PKPab-PKPbc</type>
-      <otimes>synth_pkp_ylm.dat</otimes>
+      <otimes>PKPab_PKPbc_residuals_no_mantle_corr.dat</otimes>
       <raypaths>ray_path_H_M_PKPab-bc_300km_Boschi.dat</raypaths>
       <topoin>topo_in_H_M_PKPab-bc_300km_Boschi.dat</topoin>
     </set>
     <set>
       <type>P4KP-PcP</type>
-      <otimes>synth_p4kp_ylm.dat</otimes>
+      <otimes>P4KP_PcP_residuals_no_mantle_corr.dat</otimes>
       <raypaths>P4KP_PcP_Tanaka_Tomo.dat</raypaths>
       <topoin>P4KP_PcP_Tanaka_Topo.dat</topoin>
     </set>
